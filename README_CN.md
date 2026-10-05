@@ -32,15 +32,23 @@ VisionMol 是一款专为 VR 设计的蛋白质分子可视化应用。它可以
 ## 要求
 
 - VisionMol 基于游戏引擎 Unity。
-- 此版本在 Unity 2021.3.34f1c1 LTS 上运行,在 Windows 上进行了测试。主要开发是在 Windows 上完成的。
+- Meta Quest 分支实际使用 Unity 2022.3.17f1c1 LTS,在 Windows 上进行了测试。主要开发是在 Windows 上完成的。
 
 ## 使用说明
 
-1. 使用 Unity 2021.3.34f1c1 版本打开项目。
+1. 使用 Unity 2022.3.17f1c1 版本打开项目。
 2. `MainScene.unity` 是主场景文件。
 3. 通过界面菜单加载所需的 PDB 格式分子文件。
 4. 使用 VR 手柄进行三维交互,查看和操作分子模型。
 5. 通过界面菜单切换分子的可视化表示方式、测量距离、合并分子、调整残基颜色分割和二级结构颜色等功能。
+
+## 晕动症与 BCI 实验扩展
+
+`Assets/Cybersickness/` 提供了本项目的第一阶段实验基础模块，包括头显运动与帧率日志、可解释的 HMD-only 风险基线、自适应连续移动速度控制、实验 marker 和主观评分接口。
+
+详细接入步骤、CSV 字段、风险阈值和后续 EEG/BCI 接口说明见：
+
+`Assets/Cybersickness/Documentation/README.md`
 
 ## 注意事项
 
