@@ -1,0 +1,14 @@
+timestamp_s,risk,quality,source
+0,0.10,1.00,replay_demo
+1,0.15,1.00,replay_demo
+2,0.20,1.00,replay_demo
+3,0.42,1.00,replay_demo
+4,0.58,1.00,replay_demo
+5,0.72,1.00,replay_demo
+6,0.85,1.00,replay_demo
+7,0.88,1.00,replay_demo
+8,0.70,1.00,replay_demo
+9,0.52,1.00,replay_demo
+10,0.30,1.00,replay_demo
+11,0.18,1.00,replay_demo
+12,0.10,1.00,replay_demo

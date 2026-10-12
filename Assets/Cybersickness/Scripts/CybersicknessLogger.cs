@@ -9,44 +9,42 @@ namespace VRBCI.Cybersickness
 {
     /// <summary>
     /// Writes a synchronized, analysis-friendly CSV stream for each VR session.
-    /// The logger is intentionally independent of the BCI vendor SDK: an EEG
-    /// stream can be joined later with the Unity timestamp and marker columns.
+    /// The logger is independent of a BCI vendor SDK: an EEG stream can be
+    /// joined later with Unity time and marker columns.
     /// </summary>
     [DisallowMultipleComponent]
     [AddComponentMenu("VR BCI/Cybersickness Logger")]
     public sealed class CybersicknessLogger : MonoBehaviour
     {
         [Header("Tracking")]
-        [SerializeField]
-        Transform m_HeadTransform;
-
-        [SerializeField]
-        Transform m_RigTransform;
-
-        [SerializeField, Min(0.02f)]
-        float m_SampleInterval = 0.1f;
-
-        [SerializeField]
-        string m_SessionLabel = "vr_session";
-
-        [SerializeField]
-        bool m_AutoStart = true;
-
-        [SerializeField]
-        CybersicknessComfortController m_ComfortController;
+        [SerializeField] Transform m_HeadTransform;
+        [SerializeField] Transform m_RigTransform;
+        [SerializeField] Transform m_VirtualCameraTransform;
+        [SerializeField, Min(0.02f)] float m_SampleInterval = 0.1f;
+        [SerializeField] string m_SessionLabel = "vr_session";
+        [SerializeField] bool m_AutoStart = true;
+        [SerializeField] CybersicknessComfortController m_ComfortController;
 
         StreamWriter m_Writer;
         string m_CurrentFilePath;
+        string m_CurrentCondition = "unspecified";
         float m_SampleAccumulator;
         float m_PreviousSampleTime;
+        float m_SessionStartTime;
+        float m_PreviousHeadAngularSpeed;
+        float m_PreviousFrameTimeMs;
         Vector3 m_PreviousHeadPosition;
         Quaternion m_PreviousHeadRotation;
         Vector3 m_PreviousRigPosition;
+        Vector3 m_PreviousVirtualPosition;
+        Quaternion m_PreviousVirtualRotation;
         bool m_HasPreviousPose;
+        bool m_HasPreviousVirtualPose;
         int m_CurrentRating = -1;
 
         public bool IsRecording => m_Writer != null;
         public string CurrentFilePath => m_CurrentFilePath;
+        public string CurrentCondition => m_CurrentCondition;
 
         void Awake()
         {
@@ -86,11 +84,15 @@ namespace VRBCI.Cybersickness
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss_fff", CultureInfo.InvariantCulture);
             m_CurrentFilePath = Path.Combine(directory, safeLabel + "_" + timestamp + ".csv");
             m_Writer = new StreamWriter(m_CurrentFilePath, false, new UTF8Encoding(false));
-            m_Writer.WriteLine("row_type,unix_time_utc,unity_time_s,frame,scene,head_px,head_py,head_pz,head_qx,head_qy,head_qz,head_qw,head_linear_speed_mps,head_angular_speed_dps,rig_linear_speed_mps,frame_time_ms,fps,risk_raw,risk_smoothed,risk_level,intervention,rating,marker");
+            m_Writer.WriteLine("row_type,unix_time_utc,unity_time_s,frame,scene,head_px,head_py,head_pz,head_qx,head_qy,head_qz,head_qw,head_linear_speed_mps,head_angular_speed_dps,head_angular_acceleration_dps2,rig_linear_speed_mps,virtual_camera_linear_speed_mps,virtual_camera_angular_speed_dps,visual_physical_mismatch,frame_time_ms,frame_jitter_ms,fps,exposure_duration_s,risk_raw,risk_smoothed,risk_level,intervention,external_risk,external_quality,risk_source,external_stale,condition,rating,marker");
 
             m_SampleAccumulator = 0f;
             m_PreviousSampleTime = Time.unscaledTime;
+            m_SessionStartTime = Time.unscaledTime;
+            m_PreviousHeadAngularSpeed = 0f;
+            m_PreviousFrameTimeMs = 0f;
             m_HasPreviousPose = false;
+            m_HasPreviousVirtualPose = false;
             WriteSample("marker", "session_start");
             m_Writer.Flush();
 
@@ -118,6 +120,12 @@ namespace VRBCI.Cybersickness
             m_Writer.Flush();
         }
 
+        public void SetCondition(string condition)
+        {
+            m_CurrentCondition = string.IsNullOrWhiteSpace(condition) ? "unspecified" : condition;
+            RecordMarker("condition_" + m_CurrentCondition);
+        }
+
         public void SetSubjectiveRating(int rating)
         {
             m_CurrentRating = Mathf.Clamp(rating, 0, 10);
@@ -134,6 +142,8 @@ namespace VRBCI.Cybersickness
         {
             if (m_HeadTransform == null && Camera.main != null)
                 m_HeadTransform = Camera.main.transform;
+            if (m_VirtualCameraTransform == null)
+                m_VirtualCameraTransform = m_HeadTransform;
             if (m_RigTransform == null && m_HeadTransform != null && m_HeadTransform.parent != null)
                 m_RigTransform = m_HeadTransform.parent;
             if (m_ComfortController == null)
@@ -150,7 +160,10 @@ namespace VRBCI.Cybersickness
             float dt = Mathf.Max(now - m_PreviousSampleTime, 0.0001f);
             float headLinearSpeed = 0f;
             float headAngularSpeed = 0f;
+            float headAngularAcceleration = 0f;
             float rigLinearSpeed = 0f;
+            float virtualLinearSpeed = 0f;
+            float virtualAngularSpeed = 0f;
 
             Vector3 headPosition = Vector3.zero;
             Quaternion headRotation = Quaternion.identity;
@@ -162,26 +175,49 @@ namespace VRBCI.Cybersickness
                 {
                     headLinearSpeed = Vector3.Distance(headPosition, m_PreviousHeadPosition) / dt;
                     headAngularSpeed = Quaternion.Angle(headRotation, m_PreviousHeadRotation) / dt;
+                    headAngularAcceleration = Mathf.Abs(headAngularSpeed - m_PreviousHeadAngularSpeed) / dt;
                 }
                 m_PreviousHeadPosition = headPosition;
                 m_PreviousHeadRotation = headRotation;
+                m_PreviousHeadAngularSpeed = headAngularSpeed;
             }
 
             if (m_RigTransform != null && m_HasPreviousPose)
                 rigLinearSpeed = Vector3.Distance(m_RigTransform.position, m_PreviousRigPosition) / dt;
-
             if (m_RigTransform != null)
                 m_PreviousRigPosition = m_RigTransform.position;
+
+            if (m_VirtualCameraTransform != null)
+            {
+                if (m_HasPreviousVirtualPose)
+                {
+                    virtualLinearSpeed = Vector3.Distance(m_VirtualCameraTransform.position, m_PreviousVirtualPosition) / dt;
+                    virtualAngularSpeed = Quaternion.Angle(m_VirtualCameraTransform.rotation, m_PreviousVirtualRotation) / dt;
+                }
+                m_PreviousVirtualPosition = m_VirtualCameraTransform.position;
+                m_PreviousVirtualRotation = m_VirtualCameraTransform.rotation;
+                m_HasPreviousVirtualPose = true;
+            }
 
             m_HasPreviousPose = true;
             m_PreviousSampleTime = now;
 
             float frameTimeMs = Time.unscaledDeltaTime * 1000f;
+            float frameJitterMs = m_PreviousFrameTimeMs <= 0f ? 0f : Mathf.Abs(frameTimeMs - m_PreviousFrameTimeMs);
             float fps = 1f / Mathf.Max(Time.unscaledDeltaTime, 0.0001f);
+            float mismatch = Mathf.Clamp01(0.5f *
+                (Mathf.Abs(virtualLinearSpeed - headLinearSpeed) / 2f +
+                 Mathf.Abs(virtualAngularSpeed - headAngularSpeed) / 120f));
+            m_PreviousFrameTimeMs = frameTimeMs;
+
             string riskRaw = m_ComfortController == null ? string.Empty : F(m_ComfortController.RawRisk);
             string riskSmoothed = m_ComfortController == null ? string.Empty : F(m_ComfortController.SmoothedRisk);
             string riskLevel = m_ComfortController == null ? string.Empty : m_ComfortController.CurrentRiskLevel.ToString();
             string intervention = m_ComfortController == null ? string.Empty : m_ComfortController.CurrentIntervention.ToString();
+            string externalRisk = m_ComfortController == null ? string.Empty : F(m_ComfortController.ExternalRiskEnabled ? m_ComfortController.RawRisk : -1f);
+            string externalQuality = m_ComfortController == null ? string.Empty : F(m_ComfortController.ExternalRiskQuality);
+            string externalSource = m_ComfortController == null ? string.Empty : m_ComfortController.ExternalRiskSource;
+            string externalStale = m_ComfortController == null ? string.Empty : m_ComfortController.ExternalRiskStale.ToString();
             string utc = DateTime.UtcNow.ToString("o", CultureInfo.InvariantCulture);
             string scene = SceneManager.GetActiveScene().name;
 
@@ -194,8 +230,12 @@ namespace VRBCI.Cybersickness
                 scene,
                 F(headPosition.x), F(headPosition.y), F(headPosition.z),
                 F(headRotation.x), F(headRotation.y), F(headRotation.z), F(headRotation.w),
-                F(headLinearSpeed), F(headAngularSpeed), F(rigLinearSpeed),
-                F(frameTimeMs), F(fps), riskRaw, riskSmoothed, riskLevel, intervention,
+                F(headLinearSpeed), F(headAngularSpeed), F(headAngularAcceleration), F(rigLinearSpeed),
+                F(virtualLinearSpeed), F(virtualAngularSpeed), F(mismatch),
+                F(frameTimeMs), F(frameJitterMs), F(fps), F(now - m_SessionStartTime),
+                riskRaw, riskSmoothed, riskLevel, intervention,
+                externalRisk, externalQuality, externalSource, externalStale,
+                m_CurrentCondition,
                 m_CurrentRating < 0 ? string.Empty : m_CurrentRating.ToString(CultureInfo.InvariantCulture),
                 marker
             };

@@ -64,6 +64,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Python analysis caches
+__pycache__/
+*.pyc
+
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
