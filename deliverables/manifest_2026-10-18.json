@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-18",
+  "source_commit": "3951cc6b088371770ed72f28036e8723c681d764",
+  "branch": "cybersickness-baseline",
+  "archive": "cybersickness_research_2026-10-18_3951cc6.zip",
+  "archive_sha256": "d8d0bfa8f21e12fe43bf0f03dbd6b5af59fe6823007c84a2d2e1dbff3bff0576",
+  "archive_bytes": 3062530,
+  "archive_files": 289,
+  "verified_archived_sha256_entries": 113,
+  "scope": "research module, analysis code, public-data evaluation outputs, manuscripts and weekly report; not a standalone Unity project",
+  "excluded": [
+    "raw recordings",
+    "processed training data",
+    "virtual environments",
+    "full run directories",
+    "upstream downloaded code",
+    "Unity caches",
+    "local Unity environment settings"
+  ],
+  "evidence_scope": "public-data secondary analysis and desktop software execution; no new human study"
+}

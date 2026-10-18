@@ -3,7 +3,7 @@
 /analysis/** -text whitespace=cr-at-eol
 /research/** -text whitespace=cr-at-eol
 /output/pdf/** -text whitespace=cr-at-eol
-/deliverables/** -text
+/deliverables/** -text whitespace=cr-at-eol
 
 # Generated assets and archives are binary, including ASCII-encoded PDFs.
 *.pdf binary
