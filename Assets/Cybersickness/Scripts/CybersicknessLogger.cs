@@ -41,10 +41,16 @@ namespace VRBCI.Cybersickness
         bool m_HasPreviousPose;
         bool m_HasPreviousVirtualPose;
         int m_CurrentRating = -1;
+        float m_CurrentNormalizedRating = float.NaN;
+        float m_RatingUpdateTime = float.NaN;
+        string m_RatingSource = string.Empty;
 
         public bool IsRecording => m_Writer != null;
         public string CurrentFilePath => m_CurrentFilePath;
         public string CurrentCondition => m_CurrentCondition;
+        public float CurrentNormalizedRating => m_CurrentNormalizedRating;
+        public string CurrentRatingSource => m_RatingSource;
+        public float RatingUpdateTime => m_RatingUpdateTime;
 
         void Awake()
         {
@@ -84,7 +90,7 @@ namespace VRBCI.Cybersickness
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss_fff", CultureInfo.InvariantCulture);
             m_CurrentFilePath = Path.Combine(directory, safeLabel + "_" + timestamp + ".csv");
             m_Writer = new StreamWriter(m_CurrentFilePath, false, new UTF8Encoding(false));
-            m_Writer.WriteLine("row_type,unix_time_utc,unity_time_s,frame,scene,head_px,head_py,head_pz,head_qx,head_qy,head_qz,head_qw,head_linear_speed_mps,head_angular_speed_dps,head_angular_acceleration_dps2,rig_linear_speed_mps,virtual_camera_linear_speed_mps,virtual_camera_angular_speed_dps,visual_physical_mismatch,frame_time_ms,frame_jitter_ms,fps,exposure_duration_s,risk_raw,risk_smoothed,risk_level,intervention,external_risk,external_quality,risk_source,external_stale,condition,rating,marker");
+            m_Writer.WriteLine("row_type,unix_time_utc,unity_time_s,frame,scene,head_px,head_py,head_pz,head_qx,head_qy,head_qz,head_qw,head_linear_speed_mps,head_angular_speed_dps,head_angular_acceleration_dps2,rig_linear_speed_mps,virtual_camera_linear_speed_mps,virtual_camera_angular_speed_dps,visual_physical_mismatch,frame_time_ms,frame_jitter_ms,fps,exposure_duration_s,risk_raw,risk_smoothed,risk_level,intervention,external_risk,external_quality,risk_source,external_stale,condition,rating,marker,rating_normalized,rating_source,rating_update_unity_s,rating_age_s,target_speed_multiplier,applied_speed_multiplier,prediction_id,alarm_id,source_prediction_time_s,receipt_time_s");
 
             m_SampleAccumulator = 0f;
             m_PreviousSampleTime = Time.unscaledTime;
@@ -93,6 +99,11 @@ namespace VRBCI.Cybersickness
             m_PreviousFrameTimeMs = 0f;
             m_HasPreviousPose = false;
             m_HasPreviousVirtualPose = false;
+            // A new recording must not inherit a rating from the previous session.
+            m_CurrentRating = -1;
+            m_CurrentNormalizedRating = float.NaN;
+            m_RatingUpdateTime = float.NaN;
+            m_RatingSource = string.Empty;
             WriteSample("marker", "session_start");
             m_Writer.Flush();
 
@@ -129,12 +140,31 @@ namespace VRBCI.Cybersickness
         public void SetSubjectiveRating(int rating)
         {
             m_CurrentRating = Mathf.Clamp(rating, 0, 10);
+            m_CurrentNormalizedRating = m_CurrentRating / 10f;
+            m_RatingUpdateTime = Time.unscaledTime;
+            m_RatingSource = "manual_discrete_0_10";
             RecordMarker("rating_" + m_CurrentRating.ToString(CultureInfo.InvariantCulture));
+        }
+
+        /// <summary>Custom continuous self-report, not a standard clinical scale.</summary>
+        public void SetContinuousSubjectiveRating(float normalizedRating)
+        {
+            if (float.IsNaN(normalizedRating) || float.IsInfinity(normalizedRating) ||
+                normalizedRating < 0f || normalizedRating > 1f)
+                return;
+            m_CurrentRating = -1;
+            m_CurrentNormalizedRating = normalizedRating;
+            m_RatingUpdateTime = Time.unscaledTime;
+            m_RatingSource = "custom_continuous_0_1";
+            RecordMarker("rating_continuous_" + F(normalizedRating));
         }
 
         public void ClearSubjectiveRating()
         {
             m_CurrentRating = -1;
+            m_CurrentNormalizedRating = float.NaN;
+            m_RatingUpdateTime = float.NaN;
+            m_RatingSource = string.Empty;
             RecordMarker("rating_cleared");
         }
 
@@ -237,7 +267,17 @@ namespace VRBCI.Cybersickness
                 externalRisk, externalQuality, externalSource, externalStale,
                 m_CurrentCondition,
                 m_CurrentRating < 0 ? string.Empty : m_CurrentRating.ToString(CultureInfo.InvariantCulture),
-                marker
+                marker,
+                float.IsNaN(m_CurrentNormalizedRating) ? string.Empty : F(m_CurrentNormalizedRating),
+                m_RatingSource,
+                float.IsNaN(m_RatingUpdateTime) ? string.Empty : F(m_RatingUpdateTime),
+                float.IsNaN(m_RatingUpdateTime) ? string.Empty : F(Mathf.Max(0f, now - m_RatingUpdateTime)),
+                m_ComfortController == null ? string.Empty : F(m_ComfortController.TargetSpeedMultiplier),
+                m_ComfortController == null ? string.Empty : F(m_ComfortController.AppliedSpeedMultiplier),
+                m_ComfortController == null ? string.Empty : m_ComfortController.PredictionId,
+                m_ComfortController == null ? string.Empty : m_ComfortController.AlarmId,
+                m_ComfortController == null ? string.Empty : m_ComfortController.ExternalRiskTimestamp.ToString("R", CultureInfo.InvariantCulture),
+                m_ComfortController == null ? string.Empty : m_ComfortController.LastRiskReceiptTime.ToString("R", CultureInfo.InvariantCulture)
             };
 
             for (int i = 0; i < fields.Length; i++)

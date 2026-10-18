@@ -1,0 +1,18 @@
+{
+  "scope": "desktop software actuator measurements, not symptom reduction or XR display latency",
+  "monitor_s": 8.999999999999986,
+  "occupied_s": 0.0,
+  "intensity_s": 0.0,
+  "tail_s": 0.0166664123535156,
+  "tail_occupied_s": 0.0,
+  "tail_intensity_s": 0.0,
+  "unique_received_alarms": 0,
+  "occupied_column_max_error": 0.0,
+  "intensity_column_max_error": 0.0,
+  "parity_max_error_risk_smoothed": 0.0,
+  "parity_max_error_target_multiplier": 0.0,
+  "parity_max_error_applied_multiplier": 0.0,
+  "parity_occupied_error_s": 0.0,
+  "parity_intensity_error_s": 0.0,
+  "parity_passed": true
+}

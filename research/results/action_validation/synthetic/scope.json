@@ -1,0 +1,6 @@
+{
+  "data_kind": "synthetic",
+  "source": "action_parity",
+  "frames": "losslessly compressed CSV; decompression recovers the original source bytes",
+  "scope": "software-only evidence; no new participant experiment"
+}

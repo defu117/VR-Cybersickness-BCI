@@ -1,0 +1,357 @@
+{
+  "identity": {
+    "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+    "protocol": {
+      "window_s": 3.0,
+      "history_windows": 3,
+      "horizon_s": 6.0,
+      "event_delta": 0.1,
+      "interval_alpha": 0.2,
+      "min_quality": 0.8,
+      "max_rating_age_s": 1.0,
+      "max_eeg_gap_s": 0.25,
+      "max_startup_eeg_s": 5.0,
+      "max_hmd_gap_s": 0.25,
+      "low_hz": 1.0,
+      "high_hz": 40.0,
+      "notch_hz": 50.0,
+      "baseline_windows": 3,
+      "consecutive_windows": 2,
+      "cooldown_s": 12.0,
+      "calibration_fraction": 0.25,
+      "seeds": [
+        7,
+        19,
+        42
+      ]
+    },
+    "data_kind": "public",
+    "models": [
+      "eeg_ridge",
+      "fusion_cnn_lstm",
+      "fusion_cqr",
+      "fusion_hgb",
+      "fusion_ridge",
+      "fusion_state",
+      "hmd_ridge",
+      "oracle_rating_persistence",
+      "time_hgb"
+    ],
+    "seeds": [
+      7,
+      19,
+      42
+    ],
+    "subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ]
+  },
+  "source_runs": [
+    {
+      "seed": 7,
+      "directory": "runs/public_h6_v1",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "time_hgb",
+            "fusion_state",
+            "hmd_ridge",
+            "eeg_ridge",
+            "fusion_ridge",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    },
+    {
+      "seed": 19,
+      "directory": "runs/public_h6_seed19",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            19
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "time_hgb",
+            "fusion_state",
+            "hmd_ridge",
+            "eeg_ridge",
+            "fusion_ridge",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    },
+    {
+      "seed": 42,
+      "directory": "runs/public_h6_seed42",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            42
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "time_hgb",
+            "fusion_state",
+            "hmd_ridge",
+            "eeg_ridge",
+            "fusion_ridge",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    },
+    {
+      "seed": 7,
+      "directory": "runs/public_h6_neural",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "tensor_sha256": "6103a9497a97f91ec9803c0272bdb168921c0efbc323240d339b622bf4e7c076",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "data_kind": "public",
+          "models": [
+            "fusion_cnn_lstm"
+          ],
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "evaluation_sha256": "6784174ad646b626a354ccad95687b79030ed93a2f4c55bfbfb9e1605132cb1e",
+          "max_epochs": 60
+        },
+        "torch": "2.14.1+cpu"
+      }
+    },
+    {
+      "seed": 19,
+      "directory": "runs/public_h6_neural",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "tensor_sha256": "6103a9497a97f91ec9803c0272bdb168921c0efbc323240d339b622bf4e7c076",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "data_kind": "public",
+          "models": [
+            "fusion_cnn_lstm"
+          ],
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "evaluation_sha256": "6784174ad646b626a354ccad95687b79030ed93a2f4c55bfbfb9e1605132cb1e",
+          "max_epochs": 60
+        },
+        "torch": "2.14.1+cpu"
+      }
+    },
+    {
+      "seed": 42,
+      "directory": "runs/public_h6_neural",
+      "metadata": {
+        "identity": {
+          "input_sha256": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+          "tensor_sha256": "6103a9497a97f91ec9803c0272bdb168921c0efbc323240d339b622bf4e7c076",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 6.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "data_kind": "public",
+          "models": [
+            "fusion_cnn_lstm"
+          ],
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "evaluation_sha256": "6784174ad646b626a354ccad95687b79030ed93a2f4c55bfbfb9e1605132cb1e",
+          "max_epochs": 60
+        },
+        "torch": "2.14.1+cpu"
+      }
+    }
+  ],
+  "merge_source_sha256": "c62fe903ee3a35707189b0e2a0dbbfd8d6c5bc2747716dd8209062d572a741d9"
+}

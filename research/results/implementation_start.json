@@ -1,0 +1,11 @@
+{
+  "Assets/Oculus/OculusProjectConfig.asset": "81f433d5fe00717bc9105d35b5520718748674b9b24e0f962a6c190947ca5c7e",
+  "Packages/packages-lock.json": "1ab04e992066d67fe8279fc2d4f0625f537f0eb1b7a4705eeb2b1e004db64306",
+  "ProjectSettings/PackageManagerSettings.asset": "7774d00f020dae1f8fd63e27de37049e2b2b278b18b4d4f506cc7ee2b7f861ec",
+  "ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json": "a40f81b0dcc795e422f5ca0881fe7dad4e26cb8fdb33244a70f110835c1a8d44",
+  "ProjectSettings/ProjectVersion.txt": "1f9a7a7b0320704ee4b416cb50c968ab3e36ec8969879ffff2952a75c1838618",
+  "research/manuscript.md": "00f7455b6f077a5df3140bc18d77649c8c07ac41186a4df7bcce22bf49911282",
+  "research/manuscript_zh.md": "370aa0e4cd40fec9a667eeaa851e2cefe246da8ac742c5f8699242f9674c10c4",
+  "output/pdf/cybersickness_forecasting_draft.pdf": "6ef84193ab4e68dc561d6a666c8a5496d686d26eab7739c99cca3ce827555680",
+  "output/pdf/cybersickness_forecasting_draft_zh.pdf": "247ec817ae3c7aedc8f77a62bd575076d26ee50fdef25b86f838df5f17410756"
+}

@@ -1,0 +1,12 @@
+event,local_time_s,replay_elapsed_s,mapped_data_time_s,source_prediction_time_s,prediction_id,alarm_id,target_multiplier,applied_multiplier,source
+alarm_received,87,87,96,96,"PA1.PA1_Base.usable_b0p5.7.96.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,1,"forecast_public_secondary_action"
+target_changed,87.699996948242188,87.699996948242188,96.699996948242188,96,"PA1.PA1_Base.usable_b0p5.7.96.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",0.75,1,"forecast_public_secondary_action"
+action_started,87.716667175292969,87.716667175292969,96.716667175292969,96,"PA1.PA1_Base.usable_b0p5.7.96.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",0.75,0.98333334922790527,"forecast_public_secondary_action"
+action_effective,88.083335876464844,88.083335876464844,97.083335876464844,96,"PA1.PA1_Base.usable_b0p5.7.96.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",0.75,0.80000019073486328,"forecast_public_secondary_action"
+target_changed,89,89,98,96,"PA1.PA1_Base.usable_b0p5.7.96.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",0.5,0.75,"forecast_public_secondary_action"
+target_changed,97.199996948242188,97.199996948242188,106.19999694824219,105,"PA1.PA1_Base.usable_b0p5.7.105.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",0.75,0.5,"forecast_public_secondary_action"
+target_changed,100.19999694824219,100.19999694824219,109.19999694824219,108,"PA1.PA1_Base.usable_b0p5.7.108.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,0.75,"forecast_public_secondary_action"
+recovery_started,100.19999694824219,100.19999694824219,109.19999694824219,108,"PA1.PA1_Base.usable_b0p5.7.108.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,0.75,"forecast_public_secondary_action"
+recovery_completed,100.66666412353516,100.66666412353516,109.66666412353516,108,"PA1.PA1_Base.usable_b0p5.7.108.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,0.99166643619537354,"forecast_public_secondary_action"
+risk_timeout,146.01666259765625,146.01666259765625,155.01666259765625,150,"PA1.PA1_Base.usable_b0p5.7.150.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,1,"hmd_fallback"
+risk_timeout,170.01666259765625,170.01666259765625,179.01666259765625,174,"PA1.PA1_Base.usable_b0p5.7.174.000000","PA1.PA1_Base.usable_b0p5.7.96.000000",1,1,"hmd_fallback"

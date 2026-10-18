@@ -50,7 +50,13 @@ namespace VRBCI.Cybersickness
         public void MarkCondition(string condition)
         {
             if (m_Logger != null)
-                m_Logger.RecordMarker("condition_" + condition);
+                m_Logger.SetCondition(condition);
+        }
+
+        public void SetContinuousRating(float normalizedRating)
+        {
+            if (m_Logger != null)
+                m_Logger.SetContinuousSubjectiveRating(normalizedRating);
         }
 
         public void SetRating0() => SetRating(0);

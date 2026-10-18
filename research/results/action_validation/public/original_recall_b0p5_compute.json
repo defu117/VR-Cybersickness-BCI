@@ -1,0 +1,1 @@
+{"frames":7200,"mean_update_ms":0.00723723611111082,"median_update_ms":0.0063,"p95_update_ms":0.0122,"includes_frame_logging":true,"scope":"Stopwatch wall-clock controller update including logging; separate from simulated time; not XR latency"}

@@ -1,0 +1,15 @@
+# Preserve frozen research sources, evidence and their recorded SHA256 values.
+/Assets/Cybersickness/** -text whitespace=cr-at-eol
+/analysis/** -text whitespace=cr-at-eol
+/research/** -text whitespace=cr-at-eol
+/output/pdf/** -text whitespace=cr-at-eol
+/deliverables/** -text
+
+# Generated assets and archives are binary, including ASCII-encoded PDFs.
+*.pdf binary
+*.png binary
+*.gz binary
+*.zip binary
+
+# Unity writes empty metadata values with a trailing space.
+*.meta whitespace=-blank-at-eol

@@ -1,0 +1,5 @@
+subject,session,model,seed,timestamp_s,quality,alarm,data_kind
+synthetic,gap,software_fixture,7,9.0,1.0,1,synthetic
+synthetic,gap,software_fixture,7,12.0,1.0,0,synthetic
+synthetic,gap,software_fixture,7,30.0,1.0,0,synthetic
+synthetic,gap,software_fixture,7,33.0,1.0,1,synthetic

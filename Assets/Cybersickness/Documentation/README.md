@@ -1,5 +1,36 @@
 # VR 晕动症基础模块
 
+## 新增：动作时序回放与记录
+
+`CybersicknessRiskReplay` 兼容四列旧 CSV，并支持 `prediction_id`、`alarm_id`、
+`source_timestamp_s` 和 `monitor_until_s`。同一报警的心跳沿用编号，只记录一次
+`alarm_received`。原始分析时间与本地回放时间分开保存，不按心跳伪造新预测。
+时间倒退或重复时间戳的回放会被拒绝，不排序拼接成另一条轨迹。
+
+默认启用 Research Profile：一次决策确认，风险平滑 1 秒、决策间隔 0.1 秒、
+最短干预 10 秒、恢复等待 3 秒、倍率渐变 2 秒。重复的同一目标不会重新开始干预。
+研究 CSV 使用 10 秒报警保持及 12 秒报警冷却，均为工程设置。
+
+回放自动添加 `CybersicknessActionRecorder`，产生三份文件：
+
+- `_events.csv`：报警接收、目标变化、动作开始、达到 0.80 倍率、恢复开始和完成；
+- `_frames.csv`：逐帧目标与输出倍率、原始/回放时间、报警编号、有效监测区间积分及恢复阶段；
+- `_summary.json`：低于 0.99 倍率的占用、`∫(1-倍率)dt` 强度及恢复收尾，手动停止/超时的截断标记。
+
+`Output Directory` 为空时使用既有 `Application.persistentDataPath/CybersicknessLogs/`。
+EOF 不会立即清除最后一次报警：先完成保持，再恢复，最长收尾 30 秒。循环回放先
+收尾再重置，紧急停止状态需显式恢复。旧 CSV 没有预测区间元数据时，按每条样本
+后三秒推定监测区间；正式研究使用带元数据的导出 CSV。
+
+倍率为控制器输出命令；连接 `CybersicknessMoveProvider` 后才传递给移动组件。
+它不等同于测量到的移动速度。主日志仍独立记录 Rig 速度。未连接组件也可检查
+动作状态，但不能声称测到了实际行走或症状变化。
+
+`CybersicknessActionValidation.RunReplayList` 可在批处理中导出确定性桌面轨迹，
+此模式显式使用无头动回退分支。实时 Play 模式继续使用实际 HMD 回退分支。
+逐帧模拟时间与 Stopwatch 计算开销分别记录；正式时序比较仅使用 1 倍速。
+这些检查不测量头显显示链路时延，也不提供症状减缓证据。
+
 本目录是 `VR-Cybersickness-BCI` 项目的第一阶段代码。它在不改变 VisionMol 分子功能的前提下，增加一个可逐步接入 MainScene 的晕动症实验基础层。
 
 ## 当前实现
@@ -112,14 +143,17 @@ Experiment Marker，并在找到 `Camera.main` 时自动绑定。对话框确认
 
 ## 当前边界
 
-- 目前没有接入具体 BCI 厂商 SDK、EEG、LSL 或 BrainFlow；`analysis/` 先使用合成数据和 CSV 回放，避免在设备型号未确认前引入错误依赖。
-- 当前风险模型是可解释的 HMD-only 基线，不能直接宣称为晕动症医学判断。
+- Unity 目前没有接入实时 EEG 厂商 SDK、LSL 或 BrainFlow；离线研究已读取公开 EEG/头动/自报数据并完成主实验，见 `research/status.md`。合成数据仅用于软件检查。
+- Unity 默认本地规则分数是可解释的 HMD-only 工程基线；外部论文回放是预警动作信号，两者都不能直接称为医学判断或经过验证的症状概率。
 - 代码没有自动修改 `MainScene`，因此不会破坏现有 VisionMol 场景；需要在 Unity Inspector 中显式挂载和连线。
 - 正式被试实验前应加入伦理/指导教师批准、坐姿、可随时退出和人工观察等安全流程。
 
 ## Python 离线管线
 
 `analysis/README.md` 描述从原始 EEG CSV 到风险回放的完整流程。最小测试：
+
+以下为原有 `00`-`07` 教学管线。论文实验须使用 `research/README.md` 的
+`08` 之后入口，以及至少五个满足质量要求的被试进行拟合/校准/测试隔离。
 
 ```powershell
 cd analysis
@@ -133,8 +167,27 @@ python 03_extract_features.py data/preprocessed_eeg.npz --output data/eeg_featur
 
 ## 下一步
 
-1. 在实验场景中重复 A/B/C 条件并检查 marker；
-2. 用 `risk_replay_demo.csv` 验证外部风险和 2 秒超时回退；
-3. 记录 HMD CSV 后运行 `analysis/04_align_hmd_eeg.py`；
-4. 准备至少两个 subject/session，再运行基线模型比较；
-5. 设备型号确认后，再把 Risk Replay 替换为厂商 SDK、BrainFlow 或 LSL 适配器。
+### 论文预测流
+
+论文用的未来 6 秒预测在 `analysis/08_prepare_forecast.py` 之后，详见
+`research/README.md`。`11_export_forecast_replay.py` 必须选择单个
+subject/session/model/seed，导出 0.1 秒心跳，避免 3 秒预测步长触发
+控制器现有的 2 秒超时。其 risk=0.7/0.0 是已应用预警规则后的触发信号，
+不代表医学严重度或概率。信号间断不填充，质量门控和失联回退继续有效。
+
+控制器现在按每帧经过的时间平滑外部风险，而不是用单帧时长乘以消息次数；
+因此平滑时间不随心跳频率改变。真实头显上的端到端执行延迟仍需测量。
+
+`CybersicknessForecastValidation.RunBatchChecks` 已在 Unity 2022.3.17f1
+中通过九项编辑器检查，结果为 `research/results/unity_validation.json`。
+公开数据主方案当前未产生可用的门控预警，因此还不能据此开展疗效试验。
+
+连续评分 UI 可绑定 `ExperimentMarker.SetContinuousRating(float)`，范围为 0–1。
+日志新增归一化评分、来源、更新时间和评分年龄；原 `rating` 列仍保留离散
+0–10 语义。两种来源不可直接当作同一量表。`MarkCondition` 现在同时更新
+`condition` 列和标记；新会话清空上一段评分，防止陈旧标签继承。
+
+1. 阅读 `research/status.md` 和真实实验结果，评估预警可行性；
+2. 用 `risk_replay_demo.csv` 检查目标设备上的显示、速度变化、超时回退与 marker；
+3. 确认 EEG 设备型号、SDK、时间同步和执行延迟，再实现实时适配；
+4. 仅在预测门槛、设备条件和审批满足后，按 `research/pilot_protocol.md` 开展探索性试点。

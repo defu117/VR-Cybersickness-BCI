@@ -1,0 +1,10 @@
+event,local_time_s,replay_elapsed_s,mapped_data_time_s,source_prediction_time_s,prediction_id,alarm_id,target_multiplier,applied_multiplier,source
+alarm_received,0.01666666753590107,0.01666666753590107,9.0166666675359011,9,"synthetic.last.software_fixture.7.9.000000","synthetic.last.software_fixture.7.9.000000",1,1,"forecast_synthetic_gated"
+target_changed,0.699999988079071,0.699999988079071,9.699999988079071,9,"synthetic.last.software_fixture.7.9.000000","synthetic.last.software_fixture.7.9.000000",0.75,1,"forecast_synthetic_gated"
+action_started,0.71666663885116577,0.71666663885116577,9.7166666388511658,9,"synthetic.last.software_fixture.7.9.000000","synthetic.last.software_fixture.7.9.000000",0.75,0.98333334922790527,"forecast_synthetic_gated"
+action_effective,1.0833333730697632,1.0833333730697632,10.083333373069763,9,"synthetic.last.software_fixture.7.9.000000","synthetic.last.software_fixture.7.9.000000",0.75,0.80000019073486328,"forecast_synthetic_gated"
+target_changed,2,2,11,9,"synthetic.last.software_fixture.7.9.000000","synthetic.last.software_fixture.7.9.000000",0.5,0.75,"forecast_synthetic_gated"
+target_changed,10.199999809265137,10.199999809265137,19.199999809265137,19.199999809265137,"tail","synthetic.last.software_fixture.7.9.000000",0.75,0.5,"replay_tail"
+target_changed,13.199999809265137,13.199999809265137,22.199999809265137,22.199999809265137,"tail","synthetic.last.software_fixture.7.9.000000",1,0.75,"replay_tail"
+recovery_started,13.199999809265137,13.199999809265137,22.199999809265137,22.199999809265137,"tail","synthetic.last.software_fixture.7.9.000000",1,0.75,"replay_tail"
+recovery_completed,13.666666984558105,13.666666984558105,22.666666984558105,22.666666984558105,"tail","synthetic.last.software_fixture.7.9.000000",1,0.99166643619537354,"replay_tail"

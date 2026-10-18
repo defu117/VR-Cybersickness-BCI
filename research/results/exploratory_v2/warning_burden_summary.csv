@@ -1,0 +1,5 @@
+model,policy,active_fraction
+event_budget_0p1,alarm,0.0
+event_budget_0p5,alarm,0.01495121336904868
+event_budget_1p0,alarm,0.0816135436426487
+event_fixed_0p5,alarm,0.09278637984625093

@@ -1,0 +1,79 @@
+{
+  "generated_utc": "2026-10-15T04:02:28.093162+00:00",
+  "python": "3.12.10",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "source_sha256": {
+    "analysis/08_prepare_forecast.py": "60601a1db3babcbf2489370ecef63f5d77d25984a1c8f383afec83646e247972",
+    "analysis/09_train_forecast.py": "a189c0f01f97cf53a1835ffd3e6567d5e3e33ee205c2cc08e850d20a336f6bf5",
+    "analysis/10_report_forecast.py": "463d708163b2c155330ce6c0358e4873c301d3358472409d9537030001da9fcc",
+    "analysis/11_export_forecast_replay.py": "5f4557b08565d87c28fb466bae219d517e08479aa00e1b75234a0ca21e8c288c",
+    "analysis/12_generate_forecast_fixture.py": "049b7898d0bbb1605c157e479749653e6d8b28dbe723db5a16a0169aadbb0cbd",
+    "analysis/13_audit_forecast_data.py": "a31fb3c9c234a5ba9f0a8e16e67e8c23cdbfb2e274f1dd327942ab5bfeeeb4a6",
+    "analysis/14_archive_forecast_run.py": "183384283d1954ee5f916a1c2a731f605eccad664259afc3134e7893a8421472",
+    "analysis/15_merge_forecast_runs.py": "c62fe903ee3a35707189b0e2a0dbbfd8d6c5bc2747716dd8209062d572a741d9",
+    "analysis/16_train_neural_forecast.py": "6784174ad646b626a354ccad95687b79030ed93a2f4c55bfbfb9e1605132cb1e",
+    "analysis/17_policy_feasibility.py": "6dc2218e807edc9990d5491ef21829b806a9a6f52e714152cfb080a3e1297e5c",
+    "analysis/18_train_alert_budget.py": "2fd6f8c69b94bcbd5d1938a485438c2816c9b82c46861054777cf5c4ace05ccc",
+    "analysis/19_merge_alert_runs.py": "94bc49678380848b8e872010d67b55b2f9436aa0f99430b2df1f2ead3532d8e6",
+    "analysis/20_warning_burden.py": "b078e67cc914f3e2cf00ffdbc8f9521b2f33f759f12240b23ad0f275e0141e1e",
+    "analysis/configs/alert_budget_exploratory_v2.json": "d239394f93a7165cb4caf5b59680a7f87c0e20ba8597e6572c518af89ff75a89",
+    "analysis/configs/forecast_v1.json": "e096f6195597dad645aefb39c5dc9e74d83ac85ae859240c0c67a4dd286efdbd",
+    "analysis/fetch_public_data.ps1": "e9a2e9b4215ac48d827923050b1ade90bbcd75bd62d87c6c4efc06db894c6128",
+    "analysis/forecasting/__init__.py": "40ab3d606918487a0f2e14b34bd9a24d3e7644dd2702346383894f7f045df9e5",
+    "analysis/forecasting/alerts.py": "27ad8772c7dbfe8f52f48923805f748b3f6556ae0db2528b9cb9b3f531106185",
+    "analysis/forecasting/config.py": "bbe0db2d7c997d729b9b3cb53fcd1440f1516377cf15025af94889fc3bc5f5b8",
+    "analysis/forecasting/dataset.py": "915a74098e206f859bbd157acc253f009d05e23f677f333accb26c9170fe9f09",
+    "analysis/forecasting/evaluation.py": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+    "analysis/forecasting/replay.py": "ef5548def9686cce4541121d83f34ce2a930b8e40aa890813209e75336644e87",
+    "analysis/forecasting/report.py": "fcafce31d4c3b9b65cdea9385553497a81bd6bf0c3e4e76484916c80268186c8",
+    "analysis/requirements-neural.txt": "def6dca81244c64e5b32ee3daad3ea0b29a87e072f4e8b917f2b930fafd0d805",
+    "analysis/requirements-research.lock.txt": "9b9fe49e8bf2d9e25e4a33f3289d1d363ce21f364a144f0bf4202b5221bad667",
+    "analysis/requirements-research.txt": "a2535ccf191a32d31dea1f0a2f1228232608dcedbbd7bf3fb29208798d5e8903",
+    "analysis/requirements.txt": "f0240f0e914cd3b19ca97fdf2dfbf7496214c46d3f6c265b6bad0a10ae54fe47",
+    "analysis/tests/test_forecasting.py": "aa513a78ec0ce9e9cadcbf017c218f428d53d60a6e6a4b72d51c4b3ce5ea9230",
+    "Assets/Cybersickness/Editor/CybersicknessForecastValidation.cs": "e5a0c0cfa5a906d5bd954ed6d14802f1227dfc1ee05804d90db53b6f43babbe1",
+    "Assets/Cybersickness/Scripts/CybersicknessComfortController.cs": "0d53a4e10df623eb0102cef845720b095141f4ae4f0f28bb29bc5cbc3a919895",
+    "Assets/Cybersickness/Scripts/CybersicknessExperimentController.cs": "66aad2142b8f4bfb66b1fea4240488f1c61d01f6ece2ca376f6b1b9470b33117",
+    "Assets/Cybersickness/Scripts/CybersicknessExperimentMarker.cs": "b1f5255ccb4089e15ecafb0161b627ee5e96b223989ea10a607fba0c0b4396df",
+    "Assets/Cybersickness/Scripts/CybersicknessLogger.cs": "d1e39d4685b4a27f478578fae5df442419e444716893c7997d379d2541a83e46",
+    "Assets/Cybersickness/Scripts/CybersicknessMoveProvider.cs": "a9f7c234b0a3c9fd19a301c4fdd0c5eb8d995e818ab0b6c5a3e85a82d677d2e8",
+    "Assets/Cybersickness/Scripts/CybersicknessRiskReplay.cs": "a2af0bdfdf4e1ed15ebf6bab715bf6d1c1b2497c16605c423dfa06b58f16e9ff",
+    "Assets/Cybersickness/Scripts/CybersicknessStimulusGeometry.cs": "f66526f23f1e359f37f4c59e29720169205b690b4f4c4077c15dededaeb0e81a",
+    "research/build_manuscript_pdf.py": "be826f7830326a2ab07757d9ebc40c507eb53ca3025a3d01109bc6ee37232a80",
+    "research/requirements-document.txt": "fcc09e4390b03e2cad94db1f8c4ba3607478b37d02ba7e1a52cd5d48294c9913"
+  },
+  "preexisting_settings_preserved": {
+    "Packages/packages-lock.json": true,
+    "ProjectSettings/PackageManagerSettings.asset": true,
+    "ProjectSettings/ProjectVersion.txt": true,
+    "Assets/Oculus/OculusProjectConfig.asset": true,
+    "ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json": true
+  },
+  "python_checks": 8,
+  "unity_editor_checks": 9,
+  "human_study": "not_conducted",
+  "pdf_visual_review": "all 9 rendered pages inspected",
+  "feature_sha256": {
+    "public_h3.csv": "e45a83e3c5b5e3558c6ffe476c43df1e21a1960278e30167af36cc5038791263",
+    "public_h6.csv": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+    "public_h9.csv": "239e3f532bc76e3f80985d803e72d866040af90b17eb82f06a5071dc7bf2be30"
+  },
+  "result_run_sha256": {
+    "main_h6": "4cccfbfb71862722ffd3afd362d01fb7fe3f150a87e3a0185fe1501c5505f5c0",
+    "horizon_h3": "b53ede4376b2564c69c692c677ac8da06c5fece073d5ce752de029edb0ff365a",
+    "horizon_h9": "465e8f1bdb663d209fe5020c205361a79b95e6d0a00771dc54a9dc2d8b3b1aec",
+    "exploratory_v2": "8a4db3e4856c83bf9df7355f83716435651b7b987fed7db1fa1c9e7eb482f971"
+  },
+  "pdf_versions": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0"
+  },
+  "pdf_pages": 9,
+  "pdf_source_match": true
+}

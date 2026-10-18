@@ -1,0 +1,7919 @@
+[
+  {
+    "seed": 7,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2004631732551523
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20131685945186156
+          }
+        ],
+        "calibration_radius": 0.037027326009469834,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16530424314863265
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1674216561768883
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18916155610910862
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19681205441249477
+          }
+        ],
+        "calibration_radius": 0.03873009667918746,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4161595933503258
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2712180367631907
+          }
+        ],
+        "calibration_radius": 0.12523198919163997,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.420613775909076
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.26072531246278474
+          }
+        ],
+        "calibration_radius": 0.1356895418696361,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2254410430528232
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22404213849056628
+          }
+        ],
+        "calibration_radius": 0.0632661355584279,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2254410430528232
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22404213849056628
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0001",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1906802558294496
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19110612743660277
+          }
+        ],
+        "calibration_radius": 0.03222687375970845,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16497746969153793
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16632035750158233
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18076989234846585
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19071361349151372
+          }
+        ],
+        "calibration_radius": 0.0339462675886551,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4137114843687273
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2674527922732921
+          }
+        ],
+        "calibration_radius": 0.27796614660326274,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4218114533307731
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.27018935516586623
+          }
+        ],
+        "calibration_radius": 0.28849803453171374,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2227667496712709
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2307132010764415
+          }
+        ],
+        "calibration_radius": 0.03759837080876723,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2227667496712709
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2307132010764415
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16147291889108237
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1611268951539463
+          }
+        ],
+        "calibration_radius": 0.0360881071500327,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17293585699040342
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18674528556722647
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.15086728747847483
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1555246300291218
+          }
+        ],
+        "calibration_radius": 0.03415566588291117,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3205847261171437
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21717354645253606
+          }
+        ],
+        "calibration_radius": 0.09982729344203686,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3008492773139841
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21793225235055413
+          }
+        ],
+        "calibration_radius": 0.12410611883694053,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17696792745956047
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17921909742393083
+          }
+        ],
+        "calibration_radius": 0.04696746980901063,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17696792745956047
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17921909742393083
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20033509663560697
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2007990988923356
+          }
+        ],
+        "calibration_radius": 0.03615356264243058,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15776402253028743
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1605809995451898
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.185552223499333
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19478799637421573
+          }
+        ],
+        "calibration_radius": 0.03541757211353196,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4235140948526539
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2665998286056724
+          }
+        ],
+        "calibration_radius": 0.14497953159013,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4334526905675382
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2506084219975114
+          }
+        ],
+        "calibration_radius": 0.1620620018973151,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22538079052894242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23382368716178017
+          }
+        ],
+        "calibration_radius": 0.04033316500498342,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22538079052894242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23382368716178017
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19266826892751474
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19235922807137784
+          }
+        ],
+        "calibration_radius": 0.029005851156161257,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15199403523698937
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16045036475308053
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.21208700998305774
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23035728123096189
+          }
+        ],
+        "calibration_radius": 0.02707260639769243,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.388101551528806
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22673166045089785
+          }
+        ],
+        "calibration_radius": 0.13914200531220644,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.429950862073694
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21993756509153314
+          }
+        ],
+        "calibration_radius": 0.1382770306156333,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21560578120501686
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22216247672986356
+          }
+        ],
+        "calibration_radius": 0.05231912446801127,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21560578120501686
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22216247672986356
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19266826892751474
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19235922807137784
+          }
+        ],
+        "calibration_radius": 0.040165270769099065,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15199403523698937
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16045036475308053
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.21208700998305774
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23035728123096189
+          }
+        ],
+        "calibration_radius": 0.03857329126152899,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.388101551528806
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22673166045089785
+          }
+        ],
+        "calibration_radius": 0.12017321381335291,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.429950862073694
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21993756509153314
+          }
+        ],
+        "calibration_radius": 0.12131727588932417,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21560578120501686
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22216247672986356
+          }
+        ],
+        "calibration_radius": 0.06505468230974931,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21560578120501686
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22216247672986356
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1001",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19268671118517083
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19278250202285557
+          }
+        ],
+        "calibration_radius": 0.04245874701283148,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15146355874119827
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.14265493010022365
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1984724511960761
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20925413004708834
+          }
+        ],
+        "calibration_radius": 0.036779085150904584,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.41055624641239147
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.28486383354501854
+          }
+        ],
+        "calibration_radius": 0.13465843217948031,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.43665089706925253
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.28531275390814403
+          }
+        ],
+        "calibration_radius": 0.13277063628408473,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21951503055070629
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21804883192867
+          }
+        ],
+        "calibration_radius": 0.07764192822842746,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21951503055070629
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21804883192867
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19268671118517083
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19278250202285557
+          }
+        ],
+        "calibration_radius": 0.059169199933064166,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15146355874119827
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.14265493010022365
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1984724511960761
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20925413004708834
+          }
+        ],
+        "calibration_radius": 0.06126294781301306,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.41055624641239147
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.28486383354501854
+          }
+        ],
+        "calibration_radius": 0.11037807384269657,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.43665089706925253
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.28531275390814403
+          }
+        ],
+        "calibration_radius": 0.11301246382527544,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21951503055070629
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21804883192867
+          }
+        ],
+        "calibration_radius": 0.07066242140565229,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21951503055070629
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21804883192867
+          }
+        ],
+        "calibration_radius": 0.016791649792344508,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20927110776591207
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2093967462419758
+          }
+        ],
+        "calibration_radius": 0.060455398254687945,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1199519623830447
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.11813850981694395
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2759092750042045
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2605258954980576
+          }
+        ],
+        "calibration_radius": 0.06203300519953366,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3704253603294679
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2702169422012003
+          }
+        ],
+        "calibration_radius": 0.10526384398250735,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.36856351550385535
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2594265685412288
+          }
+        ],
+        "calibration_radius": 0.1050979150689264,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21198911728179787
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2122619466121231
+          }
+        ],
+        "calibration_radius": 0.061713144494893665,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21198911728179787
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2122619466121231
+          }
+        ],
+        "calibration_radius": 0.026254394405893902,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2182219912265719
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21871792578678326
+          }
+        ],
+        "calibration_radius": 0.06345150938897355,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1314128680578653
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1313113633354762
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.21557482291230604
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2041919707983641
+          }
+        ],
+        "calibration_radius": 0.06215449023174674,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4240972630358841
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2953346698235906
+          }
+        ],
+        "calibration_radius": 0.09396084934768448,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3669300055084417
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2803887713462876
+          }
+        ],
+        "calibration_radius": 0.09587926716368655,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.241312024959904
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23463371373935818
+          }
+        ],
+        "calibration_radius": 0.06960494022443531,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.241312024959904
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23463371373935818
+          }
+        ],
+        "calibration_radius": 0.03333193716586875,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20347524395709607
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2039315792281955
+          }
+        ],
+        "calibration_radius": 0.06573580596341165,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15416111498194848
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1505219830216824
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1877123952446317
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1900061153125145
+          }
+        ],
+        "calibration_radius": 0.08323464618782883,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2994396400163537
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21988572985924343
+          }
+        ],
+        "calibration_radius": 0.1430697671102349,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3045602825453526
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21755273604175737
+          }
+        ],
+        "calibration_radius": 0.15175883065793055,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.26070540325326713
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2602399106188686
+          }
+        ],
+        "calibration_radius": 0.06705915758947792,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.26070540325326713
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2602399106188686
+          }
+        ],
+        "calibration_radius": 0.008983825469139742,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20347524395709607
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2039315792281955
+          }
+        ],
+        "calibration_radius": 0.05212834092791161,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15416111498194848
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1505219830216824
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1877123952446317
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1900061153125145
+          }
+        ],
+        "calibration_radius": 0.08233406089399832,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2994396400163537
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21988572985924343
+          }
+        ],
+        "calibration_radius": 0.16325006684769433,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3045602825453526
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21755273604175737
+          }
+        ],
+        "calibration_radius": 0.17177893049461582,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.26070540325326713
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2602399106188686
+          }
+        ],
+        "calibration_radius": 0.07269976897984227,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.26070540325326713
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2602399106188686
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.157396145535161
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1567871762191309
+          }
+        ],
+        "calibration_radius": 0.05405143089519559,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.09253207434872558
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.09084524821375817
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.16329906935165492
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1632645822067564
+          }
+        ],
+        "calibration_radius": 0.049070772940789445,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2091599894340397
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.18134167408453436
+          }
+        ],
+        "calibration_radius": 0.15060895690865198,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.21874260521971894
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1843335956762033
+          }
+        ],
+        "calibration_radius": 0.15296551708747702,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1514475147132679
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.15171860198056925
+          }
+        ],
+        "calibration_radius": 0.0646120006889744,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1514475147132679
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.15171860198056925
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20116311861098787
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20107244181840095
+          }
+        ],
+        "calibration_radius": 0.04125554596663269,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1652407241067383
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16801514770195375
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.19465176696756492
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20964514940531848
+          }
+        ],
+        "calibration_radius": 0.038016304559965255,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.44237626328433255
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24810392966267886
+          }
+        ],
+        "calibration_radius": 0.1819712401211532,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.44830554722603405
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2612346599573067
+          }
+        ],
+        "calibration_radius": 0.1822451348985424,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23696471863234836
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23967166605950188
+          }
+        ],
+        "calibration_radius": 0.06569799798483592,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23696471863234836
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23967166605950188
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0001",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20479679059034683
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20494280025076672
+          }
+        ],
+        "calibration_radius": 0.037237041044286004,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16878283789993853
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1674268143576899
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.20236033637260137
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21649739321825934
+          }
+        ],
+        "calibration_radius": 0.030750089898872,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.46238555076739096
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23829016099415323
+          }
+        ],
+        "calibration_radius": 0.1911697364340721,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4620002305411643
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2623969037658942
+          }
+        ],
+        "calibration_radius": 0.19174976894374773,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2358773677051251
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2397361124786147
+          }
+        ],
+        "calibration_radius": 0.04334620130617865,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2358773677051251
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2397361124786147
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17512165299947
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17498798171252414
+          }
+        ],
+        "calibration_radius": 0.037597798078291146,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17751815370938373
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18654055755920998
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1721881079625321
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1814525625628728
+          }
+        ],
+        "calibration_radius": 0.03115757949946047,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.46044063942217467
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22168065833747147
+          }
+        ],
+        "calibration_radius": 0.0936570406147788,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4367276376689626
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23778481692314563
+          }
+        ],
+        "calibration_radius": 0.08458455093373435,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20865539050028276
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21655581113216316
+          }
+        ],
+        "calibration_radius": 0.049971495836715465,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20865539050028276
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21655581113216316
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20895854476961837
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20928113819191616
+          }
+        ],
+        "calibration_radius": 0.03866216203662139,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15321027481552715
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1562057086166146
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2021023898140436
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21701476666013284
+          }
+        ],
+        "calibration_radius": 0.03275452599179105,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.5515317481370404
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2640441743436307
+          }
+        ],
+        "calibration_radius": 0.17782724754779045,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.5354954140203323
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2676162912016606
+          }
+        ],
+        "calibration_radius": 0.17301151847929366,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2382212564622619
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.24849926927902175
+          }
+        ],
+        "calibration_radius": 0.052606335837794366,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2382212564622619
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.24849926927902175
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19837539321714678
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19833705520822859
+          }
+        ],
+        "calibration_radius": 0.023900009757848922,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20584059621540102
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21254246812889244
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.24083599701272373
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2358829066311987
+          }
+        ],
+        "calibration_radius": 0.02490213687801382,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2929611320323027
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24017781006820313
+          }
+        ],
+        "calibration_radius": 0.19315251300783437,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3319033400432252
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2443126443888691
+          }
+        ],
+        "calibration_radius": 0.19182885420090248,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22742666525680988
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.24641502837460905
+          }
+        ],
+        "calibration_radius": 0.05929049760676672,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22742666525680988
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.24641502837460905
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20991282727609098
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2101208228650148
+          }
+        ],
+        "calibration_radius": 0.04124881323839061,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1712463221529711
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17227072686936842
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18373207406509567
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19205129544961488
+          }
+        ],
+        "calibration_radius": 0.03715454893198647,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.501260455768668
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2867045284303546
+          }
+        ],
+        "calibration_radius": 0.18433098247246324,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.46538108353096536
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.27341410122025805
+          }
+        ],
+        "calibration_radius": 0.17961156374832968,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21412685907242138
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21799716545186684
+          }
+        ],
+        "calibration_radius": 0.05984327333944179,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21412685907242138
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21799716545186684
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2096583961841457
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2098379217196879
+          }
+        ],
+        "calibration_radius": 0.04045176853597991,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16785595952348664
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17424002270701575
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.1841478785280722
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1967847692169564
+          }
+        ],
+        "calibration_radius": 0.033397895392673516,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3156657400140941
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22146411906777144
+          }
+        ],
+        "calibration_radius": 0.16783814505020445,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3063395150255892
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22387233755177668
+          }
+        ],
+        "calibration_radius": 0.16465692717796035,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2036671695141216
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22148604436794173
+          }
+        ],
+        "calibration_radius": 0.06418179940572945,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2036671695141216
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22148604436794173
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20323417188416204
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20358571314058738
+          }
+        ],
+        "calibration_radius": 0.03967729450180954,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1642209124622307
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17092470404742285
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18726395942750018
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20647560422067054
+          }
+        ],
+        "calibration_radius": 0.037108536789532895,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3783193793516631
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23802618915881282
+          }
+        ],
+        "calibration_radius": 0.17157961572837413,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3566705189208756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.25077842213959034
+          }
+        ],
+        "calibration_radius": 0.16591081761940074,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.05181872214954931,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1003",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20323417188416204
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20358571314058738
+          }
+        ],
+        "calibration_radius": 0.03967729450180954,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1642209124622307
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17092470404742285
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18726395942750018
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20647560422067054
+          }
+        ],
+        "calibration_radius": 0.0378254380985933,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3783193793516631
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23802618915881282
+          }
+        ],
+        "calibration_radius": 0.1716385035731683,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3566705189208756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.25077842213959034
+          }
+        ],
+        "calibration_radius": 0.16591081761940074,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.048914144384277686,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1004"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20323417188416204
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20358571314058738
+          }
+        ],
+        "calibration_radius": 0.03696568761079727,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1642209124622307
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17092470404742285
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18726395942750018
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20647560422067054
+          }
+        ],
+        "calibration_radius": 0.03628943533678262,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3783193793516631
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23802618915881282
+          }
+        ],
+        "calibration_radius": 0.18174017863866757,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3566705189208756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.25077842213959034
+          }
+        ],
+        "calibration_radius": 0.17453429154488542,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.04842002882319586,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20323417188416204
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20358571314058738
+          }
+        ],
+        "calibration_radius": 0.03967729450180954,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1642209124622307
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17092470404742285
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18726395942750018
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20647560422067054
+          }
+        ],
+        "calibration_radius": 0.03850575773780694,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3783193793516631
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23802618915881282
+          }
+        ],
+        "calibration_radius": 0.09348133092251003,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3566705189208756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.25077842213959034
+          }
+        ],
+        "calibration_radius": 0.09313353372680463,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.036440858293927486,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.23080892923918242
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23683878478893094
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21606417364368205
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21523856740483907
+          }
+        ],
+        "calibration_radius": 0.03953800856263066,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1758936477724617
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1617963976864996
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2151061821470353
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23157308309665828
+          }
+        ],
+        "calibration_radius": 0.03776833592644706,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.5212881207565476
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.34267470182362814
+          }
+        ],
+        "calibration_radius": 0.1384481085123355,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.44580643847562307
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.3172516552131524
+          }
+        ],
+        "calibration_radius": 0.13164938712568736,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2492573716882592
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2574180321481875
+          }
+        ],
+        "calibration_radius": 0.038043905980885494,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2492573716882592
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2574180321481875
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 19,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1004",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19990414776856824
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.20083411235042967
+          }
+        ],
+        "calibration_radius": 0.03958875814172642,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1082007417375362
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1128433392454875
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.21598748208555069
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2213990928860542
+          }
+        ],
+        "calibration_radius": 0.039182422925818194,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.426616722102454
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.28209160089355273
+          }
+        ],
+        "calibration_radius": 0.13128833405279677,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.43960462889076574
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.29196982057304366
+          }
+        ],
+        "calibration_radius": 0.1291374741765844,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1831308644971784
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18253477339449245
+          }
+        ],
+        "calibration_radius": 0.06284399403489667,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1831308644971784
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18253477339449245
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0002",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1826833736776263
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1828166723068309
+          }
+        ],
+        "calibration_radius": 0.03656145917451725,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16116491650855908
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16665707910984087
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.16064534247190235
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1731624363692975
+          }
+        ],
+        "calibration_radius": 0.034012340370765615,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.38594235123701215
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19247891820161808
+          }
+        ],
+        "calibration_radius": 0.09051704640556477,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.40251129516821105
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19246543859168386
+          }
+        ],
+        "calibration_radius": 0.09537330826732024,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19496530839271797
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1972338433242401
+          }
+        ],
+        "calibration_radius": 0.027912506309500006,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19496530839271797
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1972338433242401
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1826833736776263
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1828166723068309
+          }
+        ],
+        "calibration_radius": 0.03616608801362013,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16116491650855908
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16665707910984087
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.16064534247190235
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1731624363692975
+          }
+        ],
+        "calibration_radius": 0.03435756806749688,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.38594235123701215
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19247891820161808
+          }
+        ],
+        "calibration_radius": 0.08833497262480208,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.40251129516821105
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19246543859168386
+          }
+        ],
+        "calibration_radius": 0.08771776256770954,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19496530839271797
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1972338433242401
+          }
+        ],
+        "calibration_radius": 0.028123525488026782,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.19496530839271797
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1972338433242401
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0002",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.14955544517886746
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.14952794717807658
+          }
+        ],
+        "calibration_radius": 0.03830692643512513,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15938245932338735
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16677890441210172
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.12886440146511624
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.13788554563322838
+          }
+        ],
+        "calibration_radius": 0.03446016960160807,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4389316731352343
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24898445004129893
+          }
+        ],
+        "calibration_radius": 0.09705123335809926,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.43896051731546526
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23921745937999972
+          }
+        ],
+        "calibration_radius": 0.09033214524526152,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1623931748376253
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17227947164461288
+          }
+        ],
+        "calibration_radius": 0.029861209888251417,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1623931748376253
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17227947164461288
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1915600410547674
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19098171796313096
+          }
+        ],
+        "calibration_radius": 0.038212875145920866,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.13802559391617292
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.13946935907315894
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17062581227966228
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.18004025126058454
+          }
+        ],
+        "calibration_radius": 0.03530881007363613,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.5054925275125723
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.3221974652936106
+          }
+        ],
+        "calibration_radius": 0.10461247114932563,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.502526179967793
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.3006054382541848
+          }
+        ],
+        "calibration_radius": 0.09587509276165505,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20432082954727493
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2127351091239701
+          }
+        ],
+        "calibration_radius": 0.028372640293995454,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20432082954727493
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2127351091239701
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.18193139686528542
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18094591108821617
+          }
+        ],
+        "calibration_radius": 0.027819471341778618,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.16413683363061965
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17071318134209804
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17739860288775006
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.190715752165107
+          }
+        ],
+        "calibration_radius": 0.02690439049555214,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.40938440229594625
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.3167954508983199
+          }
+        ],
+        "calibration_radius": 0.11111283985941312,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.388534386817022
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2962968217246536
+          }
+        ],
+        "calibration_radius": 0.11394969616315624,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22396932408389278
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22473284126767076
+          }
+        ],
+        "calibration_radius": 0.039994602759939844,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.22396932408389278
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.22473284126767076
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17241980298902806
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17275649815627764
+          }
+        ],
+        "calibration_radius": 0.037783840693865076,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1554160644607326
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16219422417975038
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18386488592720296
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.1852893843740841
+          }
+        ],
+        "calibration_radius": 0.03876087912430581,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4306553993411904
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.294124508059569
+          }
+        ],
+        "calibration_radius": 0.10920775262035351,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4580200254887725
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2996965804023917
+          }
+        ],
+        "calibration_radius": 0.10010835647607708,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2209556549929212
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23411648471671143
+          }
+        ],
+        "calibration_radius": 0.034540554972660606,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.2209556549929212
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.23411648471671143
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1806990225511186
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1795846281340247
+          }
+        ],
+        "calibration_radius": 0.03630316063473748,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15948837934750254
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17049086497845783
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17728296730060372
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19177169734042795
+          }
+        ],
+        "calibration_radius": 0.03644210048539866,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3528461162264235
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.26182326094592223
+          }
+        ],
+        "calibration_radius": 0.09816525722743918,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.37593703936562756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24290463792646047
+          }
+        ],
+        "calibration_radius": 0.09588873759885268,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.03206637978293071,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1002"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1806990225511186
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1795846281340247
+          }
+        ],
+        "calibration_radius": 0.04529354301820809,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15948837934750254
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17049086497845783
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17728296730060372
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19177169734042795
+          }
+        ],
+        "calibration_radius": 0.03945519626098076,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3528461162264235
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.26182326094592223
+          }
+        ],
+        "calibration_radius": 0.09396673494402627,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.37593703936562756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24290463792646047
+          }
+        ],
+        "calibration_radius": 0.10242606759928713,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.04230298919539539,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1806990225511186
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1795846281340247
+          }
+        ],
+        "calibration_radius": 0.04708398046612053,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.15948837934750254
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17049086497845783
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17728296730060372
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.19177169734042795
+          }
+        ],
+        "calibration_radius": 0.0403524470662256,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3528461162264235
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.26182326094592223
+          }
+        ],
+        "calibration_radius": 0.08931966095870622,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.37593703936562756
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24290463792646047
+          }
+        ],
+        "calibration_radius": 0.07979409983694874,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.047079846982183336,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21524922956295492
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2190708596765979
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1948802555347006
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.19474062710770232
+          }
+        ],
+        "calibration_radius": 0.048361851725031255,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1390327337446077
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.13282528815566916
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17261235764625674
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.17791430626518837
+          }
+        ],
+        "calibration_radius": 0.04178384892767162,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.4358713234414904
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22919000957809463
+          }
+        ],
+        "calibration_radius": 0.15487606980643526,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.40840233732014636
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.20343027042512074
+          }
+        ],
+        "calibration_radius": 0.144699089953221,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.187732168220042
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18966188123749977
+          }
+        ],
+        "calibration_radius": 0.055440292903280404,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.187732168220042
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18966188123749977
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.18700698562612575
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18636008170528393
+          }
+        ],
+        "calibration_radius": 0.04858308710740863,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.13523087602433662
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.13927186104345418
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.18418510409537028
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.18161661199170165
+          }
+        ],
+        "calibration_radius": 0.03467757081791159,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3183333923600476
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.21369290430209192
+          }
+        ],
+        "calibration_radius": 0.08436469464152087,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.2880353945715758
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.2073911773402877
+          }
+        ],
+        "calibration_radius": 0.08396400344756871,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1824763888100614
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18843620344439077
+          }
+        ],
+        "calibration_radius": 0.062478930300220774,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 7,
+          "l2_regularization": 10.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1824763888100614
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.18843620344439077
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.21073538645097384
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.21047115151171136
+          }
+        ],
+        "calibration_radius": 0.04621125180367132,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.12950165441926378
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.1268025643864462
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17428138734657425
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.17766422436147422
+          }
+        ],
+        "calibration_radius": 0.03890937488500498,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3997369369178776
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.24534375319630397
+          }
+        ],
+        "calibration_radius": 0.10626590197563675,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.41452360327037535
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22254007085915667
+          }
+        ],
+        "calibration_radius": 0.09038199632705915,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20720805519258448
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2013887182731422
+          }
+        ],
+        "calibration_radius": 0.06676425437303048,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.20720805519258448
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.2013887182731422
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "model_selection": {
+      "time_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.17405334167454847
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.17321431869716253
+          }
+        ],
+        "calibration_radius": 0.044374052931993854,
+        "feature_count": 1
+      },
+      "fusion_state": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.10914755248626569
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.10099846900935189
+          }
+        ]
+      },
+      "hmd_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.17642192129822779
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.17607799728971724
+          }
+        ],
+        "calibration_radius": 0.03567132447756073,
+        "feature_count": 27
+      },
+      "eeg_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.3433338378279115
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.23511885983495878
+          }
+        ],
+        "calibration_radius": 0.11051772895377214,
+        "feature_count": 855
+      },
+      "fusion_ridge": {
+        "parameters": {
+          "alpha": 100.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "alpha": 1.0
+            },
+            "inner_subject_mae": 0.39015149518636494
+          },
+          {
+            "parameters": {
+              "alpha": 100.0
+            },
+            "inner_subject_mae": 0.22167524672265856
+          }
+        ],
+        "calibration_radius": 0.10440426978196608,
+        "feature_count": 882
+      },
+      "fusion_hgb": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1651087737607183
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16270768937710128
+          }
+        ],
+        "calibration_radius": 0.05026834164668366,
+        "feature_count": 882
+      },
+      "fusion_cqr": {
+        "parameters": {
+          "max_leaf_nodes": 15,
+          "l2_regularization": 1.0
+        },
+        "inner_group_scores": [
+          {
+            "parameters": {
+              "max_leaf_nodes": 7,
+              "l2_regularization": 10.0
+            },
+            "inner_subject_mae": 0.1651087737607183
+          },
+          {
+            "parameters": {
+              "max_leaf_nodes": 15,
+              "l2_regularization": 1.0
+            },
+            "inner_subject_mae": 0.16270768937710128
+          }
+        ],
+        "calibration_radius": 0.0,
+        "feature_count": 882
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 6,
+    "calibration_radius": 0.119013711810112,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0001",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 6,
+    "calibration_radius": 0.09508444368839264,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0005",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 6,
+    "calibration_radius": 0.09279219061136246,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0006",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 6,
+    "calibration_radius": 0.09054306149482727,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0007",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 7,
+    "calibration_radius": 0.08560926467180252,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "1000",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 7,
+    "calibration_radius": 0.07987169921398163,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1001",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 7,
+    "calibration_radius": 0.0630674660205841,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 7,
+    "calibration_radius": 0.06726274639368057,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 7,
+    "calibration_radius": 0.07466557621955872,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 8,
+    "calibration_radius": 0.07459082454442978,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1101"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 8,
+    "calibration_radius": 0.08639597147703171,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 8,
+    "calibration_radius": 0.08547716587781906,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 7,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1001",
+      "1002",
+      "1003",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "0006",
+      "1000",
+      "1004"
+    ],
+    "epoch_selection_subject": "1101",
+    "selected_epochs": 51,
+    "calibration_radius": 0.051402512937784195,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.44039881229400635,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0001",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.4181748032569885,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.4192518889904022,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.4848683774471283,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.4607212543487549,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.46358543634414673,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1001",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.4760281443595886,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1002",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.46177855134010315,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1003",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.46142643690109253,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1004"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.46162503957748413,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 5,
+    "calibration_radius": 0.46183517575263977,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.4753439724445343,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 19,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0001",
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1004",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "epoch_selection_subject": "1101",
+    "selected_epochs": 11,
+    "calibration_radius": 0.13907134532928467,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0001",
+    "fit_subjects": [
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0002",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 3,
+    "calibration_radius": 0.33001717925071716,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0002",
+    "fit_subjects": [
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 3,
+    "calibration_radius": 0.3301609456539154,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0003",
+    "fit_subjects": [
+      "0002",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 3,
+    "calibration_radius": 0.31729283928871155,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0005",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0006",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.23911577463150024,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0006",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0007",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.28664782643318176,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "0007",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "1000",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.2843392491340637,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1000",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1001",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.2932596206665039,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1001",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1002"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.293680340051651,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1002",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.29328903555870056,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1003",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1004",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.33562925457954407,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1004",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1101",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.316342830657959,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1101",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1102"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "epoch_selection_subject": "1102",
+    "selected_epochs": 4,
+    "calibration_radius": 0.27466705441474915,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  },
+  {
+    "seed": 42,
+    "test_subject": "1102",
+    "fit_subjects": [
+      "0002",
+      "0003",
+      "0005",
+      "0006",
+      "0007",
+      "1002",
+      "1003",
+      "1004",
+      "1101"
+    ],
+    "calibration_subjects": [
+      "0001",
+      "1000",
+      "1001"
+    ],
+    "epoch_selection_subject": "1101",
+    "selected_epochs": 8,
+    "calibration_radius": 0.09656020998954773,
+    "architecture": "rebuilt dual spectral/kinematic CNN-LSTM; two forecast heads"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "run_sha256": "4cccfbfb71862722ffd3afd362d01fb7fe3f150a87e3a0185fe1501c5505f5c0",
+  "predictions_sha256": "edf81f7cd029d6b17d2b307bb46399189b7481ce12e192e46338c66324758cb7",
+  "source_sha256": "b078e67cc914f3e2cf00ffdbc8f9521b2f33f759f12240b23ad0f275e0141e1e",
+  "window_s": 3.0,
+  "hold_s": 10,
+  "data_kind": "public"
+}

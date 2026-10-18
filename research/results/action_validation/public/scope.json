@@ -1,0 +1,6 @@
+{
+  "data_kind": "public_derived",
+  "source": "public_action_replays",
+  "frames": "losslessly compressed CSV; decompression recovers the original source bytes",
+  "scope": "software-only evidence; no new participant experiment"
+}

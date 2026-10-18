@@ -1,0 +1,11 @@
+{
+  "translation_source": "research/manuscript.md",
+  "english_source_sha256": "00F7455B6F077A5DF3140BC18D77649C8C07AC41186A4DF7BCCE22BF49911282",
+  "chinese_source_sha256": "370aa0e4cd40fec9a667eeaa851e2cefe246da8ac742c5f8699242f9674c10c4",
+  "chinese_pdf_sha256": "247ec817ae3c7aedc8f77a62bd575076d26ee50fdef25b86f838df5f17410756",
+  "pages": 9,
+  "numeric_tables_identical": true,
+  "reference_urls_identical": true,
+  "english_files_preserved": true,
+  "visual_review": "All 9 Chinese PDF pages inspected; Chinese figures regenerated from the same archived aggregates."
+}

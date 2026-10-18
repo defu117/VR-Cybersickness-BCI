@@ -1,0 +1,37 @@
+{
+  "data_kind": "public",
+  "protocol_hash": "727a52c6c63939b4",
+  "recordings_seen": 69,
+  "records_excluded": 20,
+  "recordings_with_forecasts": 42,
+  "subjects": 12,
+  "forecast_windows": 1353,
+  "positive_windows": 110,
+  "positive_fraction": 0.08130081300813008,
+  "subjects_with_positive_windows": 8,
+  "minimum_windows_in_subject": 11,
+  "protocol": {
+    "window_s": 3.0,
+    "history_windows": 3,
+    "horizon_s": 9.0,
+    "event_delta": 0.1,
+    "interval_alpha": 0.2,
+    "min_quality": 0.8,
+    "max_rating_age_s": 1.0,
+    "max_eeg_gap_s": 0.25,
+    "max_startup_eeg_s": 5.0,
+    "max_hmd_gap_s": 0.25,
+    "low_hz": 1.0,
+    "high_hz": 40.0,
+    "notch_hz": 50.0,
+    "baseline_windows": 3,
+    "consecutive_windows": 2,
+    "cooldown_s": 12.0,
+    "calibration_fraction": 0.25,
+    "seeds": [
+      7,
+      19,
+      42
+    ]
+  }
+}

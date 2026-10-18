@@ -1,0 +1,258 @@
+[
+  {
+    "model": "eeg_ridge",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.13472851959453386,
+    "ci_low": 0.09602927601987916,
+    "ci_high": 0.17095445431785014
+  },
+  {
+    "model": "fusion_cqr",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.12387272080599224,
+    "ci_low": 0.07533883570537445,
+    "ci_high": 0.1617238901086671
+  },
+  {
+    "model": "fusion_hgb",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.12387272080599224,
+    "ci_low": 0.07533883570537445,
+    "ci_high": 0.1617238901086671
+  },
+  {
+    "model": "fusion_ridge",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.13749560748363804,
+    "ci_low": 0.09603667799894802,
+    "ci_high": 0.17609068072778758
+  },
+  {
+    "model": "fusion_state",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.11712857411404226,
+    "ci_low": 0.07757165781841052,
+    "ci_high": 0.15204008390850576
+  },
+  {
+    "model": "hmd_ridge",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.0969943089542289,
+    "ci_low": 0.03864401034572491,
+    "ci_high": 0.13686321068073556
+  },
+  {
+    "model": "time_hgb",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.09939839184624438,
+    "ci_low": 0.0406486531909267,
+    "ci_high": 0.14480883299332184
+  },
+  {
+    "model": "fusion_cnn_lstm",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.1603631433864764,
+    "ci_low": 0.0770577894966714,
+    "ci_high": 0.22685339437140417
+  },
+  {
+    "model": "eeg_ridge",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": 0.017599945480491597,
+    "ci_low": -0.02189757042957136,
+    "ci_high": 0.054390508021839416
+  },
+  {
+    "model": "fusion_cqr",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": 0.006744146691949982,
+    "ci_low": -0.010344845184916013,
+    "ci_high": 0.023880578602624037
+  },
+  {
+    "model": "fusion_hgb",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": 0.006744146691949982,
+    "ci_low": -0.010344845184916013,
+    "ci_high": 0.023880578602624037
+  },
+  {
+    "model": "fusion_ridge",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": 0.02036703336959576,
+    "ci_low": -0.026855236366259763,
+    "ci_high": 0.06365070606701914
+  },
+  {
+    "model": "hmd_ridge",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": -0.020134265159813355,
+    "ci_low": -0.04961352492075511,
+    "ci_high": 0.0063374146461680405
+  },
+  {
+    "model": "oracle_rating_persistence",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": -0.11712857411404226,
+    "ci_low": -0.15204008390850576,
+    "ci_high": -0.07757165781841054
+  },
+  {
+    "model": "time_hgb",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": -0.01773018226779788,
+    "ci_low": -0.04423272912053528,
+    "ci_high": 0.007656115766496749
+  },
+  {
+    "model": "fusion_cnn_lstm",
+    "baseline": "fusion_state",
+    "subjects": 13,
+    "mae_difference": 0.04323456927243412,
+    "ci_low": -0.016293668621908203,
+    "ci_high": 0.10035041534354089
+  },
+  {
+    "model": "eeg_ridge",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.03773421064030495,
+    "ci_low": 0.0006069195584994908,
+    "ci_high": 0.07448713566996516
+  },
+  {
+    "model": "fusion_cqr",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.02687841185176334,
+    "ci_low": 0.012029026178777191,
+    "ci_high": 0.04443830014373652
+  },
+  {
+    "model": "fusion_hgb",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.02687841185176334,
+    "ci_low": 0.012029026178777191,
+    "ci_high": 0.04443830014373652
+  },
+  {
+    "model": "fusion_ridge",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.04050129852940912,
+    "ci_low": -0.000625031100697145,
+    "ci_high": 0.0805932504629478
+  },
+  {
+    "model": "fusion_state",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.020134265159813355,
+    "ci_low": -0.0063374146461680535,
+    "ci_high": 0.04961352492075511
+  },
+  {
+    "model": "oracle_rating_persistence",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": -0.0969943089542289,
+    "ci_low": -0.1368632106807356,
+    "ci_high": -0.038644010345724934
+  },
+  {
+    "model": "time_hgb",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.00240408289201547,
+    "ci_low": -0.013292115547879266,
+    "ci_high": 0.018453986522153534
+  },
+  {
+    "model": "fusion_cnn_lstm",
+    "baseline": "hmd_ridge",
+    "subjects": 13,
+    "mae_difference": 0.06336883443224747,
+    "ci_low": 0.024669606024061534,
+    "ci_high": 0.09937847888183428
+  },
+  {
+    "model": "eeg_ridge",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.03533012774828949,
+    "ci_low": -0.011004722828254848,
+    "ci_high": 0.07919684697500991
+  },
+  {
+    "model": "fusion_cqr",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.024474328959747865,
+    "ci_low": 0.005320199226684065,
+    "ci_high": 0.043428233002580835
+  },
+  {
+    "model": "fusion_hgb",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.024474328959747865,
+    "ci_low": 0.005320199226684065,
+    "ci_high": 0.043428233002580835
+  },
+  {
+    "model": "fusion_ridge",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.038097215637393655,
+    "ci_low": -0.015388990967014335,
+    "ci_high": 0.08789242477554525
+  },
+  {
+    "model": "fusion_state",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.01773018226779788,
+    "ci_low": -0.007656115766496772,
+    "ci_high": 0.044232729120535275
+  },
+  {
+    "model": "hmd_ridge",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": -0.00240408289201547,
+    "ci_low": -0.01845398652215355,
+    "ci_high": 0.013292115547879256
+  },
+  {
+    "model": "oracle_rating_persistence",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": -0.09939839184624438,
+    "ci_low": -0.14480883299332187,
+    "ci_high": -0.04064865319092674
+  },
+  {
+    "model": "fusion_cnn_lstm",
+    "baseline": "time_hgb",
+    "subjects": 13,
+    "mae_difference": 0.060964751540231996,
+    "ci_low": 0.01890666863141719,
+    "ci_high": 0.09957362685212613
+  }
+]

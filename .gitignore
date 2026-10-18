@@ -68,6 +68,14 @@ crashlytics-build.properties
 __pycache__/
 *.pyc
 
+# Local research environments, downloaded participant recordings and upstream code
+/analysis/.venv/
+/analysis/.tmp/
+/analysis/external/
+/analysis/data/
+/analysis/runs/
+.pytest_cache/
+
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 

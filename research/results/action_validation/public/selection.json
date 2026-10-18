@@ -1,0 +1,32 @@
+[
+  {
+    "case": "original_recall_b0p5",
+    "subject": "0001",
+    "session": "FN",
+    "policy": "recall_b0p5",
+    "seed": 7,
+    "alarms": 0,
+    "selection": "lexicographically first trajectory; third case prefers a nonzero alarm if available",
+    "scope": "held-out software integration example, not representative efficacy or best-case performance"
+  },
+  {
+    "case": "secondary_recall_b0p5",
+    "subject": "PA1",
+    "session": "PA1_Base",
+    "policy": "recall_b0p5",
+    "seed": 7,
+    "alarms": 1,
+    "selection": "lexicographically first trajectory; third case prefers a nonzero alarm if available",
+    "scope": "held-out software integration example, not representative efficacy or best-case performance"
+  },
+  {
+    "case": "secondary_usable_b0p5",
+    "subject": "PA1",
+    "session": "PA1_Base",
+    "policy": "usable_b0p5",
+    "seed": 7,
+    "alarms": 1,
+    "selection": "lexicographically first trajectory; third case prefers a nonzero alarm if available",
+    "scope": "held-out software integration example, not representative efficacy or best-case performance"
+  }
+]

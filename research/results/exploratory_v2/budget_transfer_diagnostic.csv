@@ -1,0 +1,4 @@
+policy,calibration_budget,calibration_max_macro_fa,heldout_folds,heldout_folds_above_budget,heldout_fold_max_fa
+event_budget_0p1,0.1,0.0,39,0,0.0
+event_budget_0p5,0.5,0.4901960784313726,39,2,1.7142857142857142
+event_budget_1p0,1.0,0.9347010409101912,39,6,3.5294117647058827

@@ -1,0 +1,26 @@
+{
+  "subject": "synthetic",
+  "session": "none",
+  "model": "software_fixture",
+  "seed": 7,
+  "data_kind": "synthetic",
+  "source_origin_s": 9.0,
+  "heartbeat_s": 0.1,
+  "hold_s": 10.0,
+  "monitor_intervals_source_s": [
+    [
+      9.0,
+      12.0
+    ],
+    [
+      12.0,
+      15.0
+    ],
+    [
+      15.0,
+      18.0
+    ]
+  ],
+  "csv_sha256": "5efcfbff7dbd214de17b1fd5b95cd9f56ea9e7db369d04bb65d70b9efe1a0993",
+  "scope": "input warning stream, not symptom outcomes under the simulated action"
+}

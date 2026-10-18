@@ -1,0 +1,201 @@
+{
+  "identity": {
+    "input_sha256": "239e3f532bc76e3f80985d803e72d866040af90b17eb82f06a5071dc7bf2be30",
+    "protocol": {
+      "window_s": 3.0,
+      "history_windows": 3,
+      "horizon_s": 9.0,
+      "event_delta": 0.1,
+      "interval_alpha": 0.2,
+      "min_quality": 0.8,
+      "max_rating_age_s": 1.0,
+      "max_eeg_gap_s": 0.25,
+      "max_startup_eeg_s": 5.0,
+      "max_hmd_gap_s": 0.25,
+      "low_hz": 1.0,
+      "high_hz": 40.0,
+      "notch_hz": 50.0,
+      "baseline_windows": 3,
+      "consecutive_windows": 2,
+      "cooldown_s": 12.0,
+      "calibration_fraction": 0.25,
+      "seeds": [
+        7,
+        19,
+        42
+      ]
+    },
+    "data_kind": "public",
+    "models": [
+      "fusion_cqr",
+      "fusion_hgb",
+      "oracle_rating_persistence"
+    ],
+    "seeds": [
+      7,
+      19,
+      42
+    ],
+    "subjects": [
+      "0001",
+      "0002",
+      "0005",
+      "0006",
+      "0007",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1101",
+      "1102"
+    ]
+  },
+  "source_runs": [
+    {
+      "seed": 7,
+      "directory": "runs/public_h9_sensitivity",
+      "metadata": {
+        "identity": {
+          "input_sha256": "239e3f532bc76e3f80985d803e72d866040af90b17eb82f06a5071dc7bf2be30",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 9.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    },
+    {
+      "seed": 19,
+      "directory": "runs/public_h9_sensitivity",
+      "metadata": {
+        "identity": {
+          "input_sha256": "239e3f532bc76e3f80985d803e72d866040af90b17eb82f06a5071dc7bf2be30",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 9.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    },
+    {
+      "seed": 42,
+      "directory": "runs/public_h9_sensitivity",
+      "metadata": {
+        "identity": {
+          "input_sha256": "239e3f532bc76e3f80985d803e72d866040af90b17eb82f06a5071dc7bf2be30",
+          "evaluation_sha256": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+          "protocol": {
+            "window_s": 3.0,
+            "history_windows": 3,
+            "horizon_s": 9.0,
+            "event_delta": 0.1,
+            "interval_alpha": 0.2,
+            "min_quality": 0.8,
+            "max_rating_age_s": 1.0,
+            "max_eeg_gap_s": 0.25,
+            "max_startup_eeg_s": 5.0,
+            "max_hmd_gap_s": 0.25,
+            "low_hz": 1.0,
+            "high_hz": 40.0,
+            "notch_hz": 50.0,
+            "baseline_windows": 3,
+            "consecutive_windows": 2,
+            "cooldown_s": 12.0,
+            "calibration_fraction": 0.25,
+            "seeds": [
+              7,
+              19,
+              42
+            ]
+          },
+          "seeds": [
+            7,
+            19,
+            42
+          ],
+          "models": [
+            "oracle_rating_persistence",
+            "fusion_hgb",
+            "fusion_cqr"
+          ],
+          "data_kind": "public"
+        },
+        "python": "3.12.10",
+        "sklearn": "1.9.1",
+        "numpy": "2.5.4"
+      }
+    }
+  ],
+  "merge_source_sha256": "c62fe903ee3a35707189b0e2a0dbbfd8d6c5bc2747716dd8209062d572a741d9"
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "one-row HGB scoring only, excludes acquisition, feature processing, networking and XR rendering",
+  "selection": "lexicographically first subject, seed 7; fixed experimental model; no timing-based selection",
+  "concurrency_context": "other study training workers may be running; not an isolated latency benchmark",
+  "python": "3.12.10",
+  "features": 882,
+  "subject": "0001",
+  "seed": 7,
+  "score_reproduction_max_error": 8.326672684688674e-17,
+  "warmup_calls": 20,
+  "measured_calls": 200,
+  "median_score_ms": 9.523,
+  "p95_score_ms": 11.178589999999998
+}

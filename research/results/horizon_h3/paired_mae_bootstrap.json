@@ -1,0 +1,18 @@
+[
+  {
+    "model": "fusion_cqr",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.15518627616441955,
+    "ci_low": 0.1343962639222117,
+    "ci_high": 0.1779097954220215
+  },
+  {
+    "model": "fusion_hgb",
+    "baseline": "oracle_rating_persistence",
+    "subjects": 13,
+    "mae_difference": 0.15518627616441955,
+    "ci_low": 0.1343962639222117,
+    "ci_high": 0.1779097954220215
+  }
+]

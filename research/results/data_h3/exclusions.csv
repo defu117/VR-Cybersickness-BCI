@@ -1,0 +1,21 @@
+recording,reason
+0003_FR,Rating must be finite on the published 0-1 scale
+0004_BL,0004_BL_EEG.csv: empty/invalid clock
+0004_FN,0004_FN_EEG.csv: empty/invalid clock
+0004_FR,0004_FR_EEG.csv: empty/invalid clock
+0004_SN,0004_SN_EEG.csv: empty/invalid clock
+0004_SR,0004_SR_EEG.csv: empty/invalid clock
+0005_BL,0005_BL_EEG.csv: empty/invalid clock
+0007_BL,only 0 valid windows after gap/quality checks
+0007_SN,0007_SN_EEG.csv: empty/invalid clock
+1000_BL,1000_BL_EEG.csv: empty/invalid clock
+1000_NN,1000_NN_EEG.csv: empty/invalid clock
+1001_NT,1001_NT_EEG.csv: empty/invalid clock
+1100_BL,1100_BL_EEG.csv: empty/invalid clock
+1100_HH,1100_HH_EEG.csv: empty/invalid clock
+1100_HN,1100_HN_EEG.csv: empty/invalid clock
+1101_HN,1101_HN_EEG.csv: non-startup clock reset; split into recordings before analysis
+1101_NN,Rating must be finite on the published 0-1 scale
+1102_BL,1102_BL_EEG.csv: empty/invalid clock
+1192_HH,1192_HH_EEG.csv: empty/invalid clock
+1192_NH,1192_NH_EEG.csv: empty/invalid clock

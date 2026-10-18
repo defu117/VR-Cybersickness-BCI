@@ -1,0 +1,30 @@
+{
+  "frozen_at_utc": "2026-10-15T09:06:53.120027+00:00",
+  "status": "frozen_before_v3_model_fitting; not external preregistration",
+  "source_sha256": {
+    "analysis/23_run_action_v3.py": "fb3a391d1c11e9a3ef6dd4372219326efe1e35a09cca1e4db1046bfea409e818",
+    "analysis/configs/action_v3.json": "2b16abbfdb5bcbd72518d4948bc1099afb75f4ad604d18539bae69c37707621a",
+    "analysis/forecasting/__init__.py": "40ab3d606918487a0f2e14b34bd9a24d3e7644dd2702346383894f7f045df9e5",
+    "analysis/forecasting/action.py": "a7782299570e518b88acfb6434957218025db18dcc6f3ba377852066e270ecf9",
+    "analysis/forecasting/alerts.py": "27ad8772c7dbfe8f52f48923805f748b3f6556ae0db2528b9cb9b3f531106185",
+    "analysis/forecasting/config.py": "bbe0db2d7c997d729b9b3cb53fcd1440f1516377cf15025af94889fc3bc5f5b8",
+    "analysis/forecasting/dataset.py": "915a74098e206f859bbd157acc253f009d05e23f677f333accb26c9170fe9f09",
+    "analysis/forecasting/evaluation.py": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+    "analysis/forecasting/replay.py": "5caefd008669182830646f0be27beee6a644a733b76cea3c4a4e93a35abf2a96",
+    "analysis/forecasting/report.py": "fcafce31d4c3b9b65cdea9385553497a81bd6bf0c3e4e76484916c80268186c8",
+    "analysis/forecasting/secondary.py": "b9e7e25822250513ff2eb0284fa88c9fa7d961ecb6e1f4392db61c19592ca375",
+    "Assets/Cybersickness/Scripts/CybersicknessActionRecorder.cs": "8e13cc44486d178970508712d9a95711a0f94d509fa10b169af48508e41f6094",
+    "Assets/Cybersickness/Scripts/CybersicknessComfortController.cs": "bdffb995d36f93ab17a6cf5fbab550a38820ebf2ceb86772acc51f40a56f06f7",
+    "Assets/Cybersickness/Scripts/CybersicknessExperimentController.cs": "66aad2142b8f4bfb66b1fea4240488f1c61d01f6ece2ca376f6b1b9470b33117",
+    "Assets/Cybersickness/Scripts/CybersicknessExperimentMarker.cs": "b1f5255ccb4089e15ecafb0161b627ee5e96b223989ea10a607fba0c0b4396df",
+    "Assets/Cybersickness/Scripts/CybersicknessLogger.cs": "9f8b37cef57f42c70bf91d1feb2b7150f9ca12c18a861144bb1e8134a49d2433",
+    "Assets/Cybersickness/Scripts/CybersicknessMoveProvider.cs": "a9f7c234b0a3c9fd19a301c4fdd0c5eb8d995e818ab0b6c5a3e85a82d677d2e8",
+    "Assets/Cybersickness/Scripts/CybersicknessRiskReplay.cs": "bf7de25f1368b191b79c210f89544abc1bd762f2ffcda75347fb20af9f3587f4",
+    "Assets/Cybersickness/Scripts/CybersicknessStimulusGeometry.cs": "f66526f23f1e359f37f4c59e29720169205b690b4f4c4077c15dededaeb0e81a",
+    "research/action_v3_protocol.md": "a7dc04bc33b9ad416d41bce36f22c88876ab12143fce14e58c564f9ef738ee85"
+  },
+  "data_sha256": {
+    "analysis/data/processed/public_h6.csv": "d9def0ab172151771439c1bb4ddb3a6a58e6e4e77ec526032478dcc67bd2f2f9",
+    "analysis/data/processed/secondary_h6.csv": "bdf859d5058dc6d82d9497be767b119714ae09d1815a0607ba4c59bce040608c"
+  }
+}

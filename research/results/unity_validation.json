@@ -1,0 +1,1 @@
+{"status":"passed","checks":["cadence_independent_smoothing","finite_quality","quality_fallback","timeout_fallback","emergency_stop_resume","finite_replay_rows","continuous_rating_contract","rating_scale_provenance","condition_marker_state"],"scope":"Editor contract checks; no XR hardware or participant efficacy validation"}
