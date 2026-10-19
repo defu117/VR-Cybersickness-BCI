@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "status": "exploratory_local_freeze_before_first_feedback_fit",
+  "source_sha256": {
+    "research/feedback_v4_protocol.md": "228a7d9ac7e3a2ab84160f7b49bd470271067b7cbb79bf972869cf1cda3459a0",
+    "analysis/configs/feedback_v4.json": "6c2e9c5d7a56d2505e8e77e5bc112592e32f833cf791433e52f03395640b3213",
+    "analysis/30_prepare_feedback_v4.py": "b9589c74a32f62bf8f9ecee6aa7cb0b844adf02f06dee3a4b803011179c07850",
+    "analysis/31_freeze_feedback_v4.py": "8bee7973a584d7381af34117a0d28c3b9d4d5855453e39520b754ac0a5db7568",
+    "analysis/32_run_feedback_v4.py": "d5e647f30f9ab94d0596bf88f6abb026f699a3c463d951f1b9896465bdfb56e4",
+    "analysis/forecasting/feedback.py": "a011eb30eea0a199fe48433276ef574d91434610e79e430e94f85e79dc30e0cd",
+    "analysis/forecasting/action.py": "a7782299570e518b88acfb6434957218025db18dcc6f3ba377852066e270ecf9",
+    "analysis/forecasting/alerts.py": "27ad8772c7dbfe8f52f48923805f748b3f6556ae0db2528b9cb9b3f531106185",
+    "analysis/forecasting/evaluation.py": "7b86cde613c1d06950cad354217cbded4b3c372bdae84f2830c29e0d25285c46",
+    "analysis/forecasting/dataset.py": "915a74098e206f859bbd157acc253f009d05e23f677f333accb26c9170fe9f09",
+    "analysis/forecasting/secondary.py": "b9e7e25822250513ff2eb0284fa88c9fa7d961ecb6e1f4392db61c19592ca375",
+    "analysis/configs/action_v3.json": "2b16abbfdb5bcbd72518d4948bc1099afb75f4ad604d18539bae69c37707621a"
+  },
+  "data": {
+    "original": {
+      "path": "analysis/data/processed/feedback_v4/original.csv",
+      "sha256": "530bdc7572c211375be1c14c5bd77e3003d5a9e5b7b51f0a4723a450a66e9dbd",
+      "audit_summary_sha256": "cd5c59c65ae840caf497ffbc803c25b284ac33d44156432bef39d1e1395d3e9c"
+    },
+    "secondary": {
+      "path": "analysis/data/processed/feedback_v4/secondary.csv",
+      "sha256": "b19cfdf14607c181ace15c30199b1967f60023a9082b0899d77a99e309ccf7a6",
+      "audit_summary_sha256": "9c471f79bc1b5da275cbbc65e235830b09ed4bfc335e7faf9c9ea380661fb95d"
+    }
+  },
+  "python": "3.12.10",
+  "sklearn": "1.9.1",
+  "runtime_clock_utc": "2026-10-19T00:50:54.024910+00:00"
+}

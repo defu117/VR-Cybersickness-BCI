@@ -1,0 +1,327 @@
+{
+  "dataset": "original",
+  "status": "complete",
+  "identifiers": 13,
+  "folds": 39,
+  "model_condition_seed_id_combinations": 1053,
+  "freeze_sha256": "86119ac1d051bac013331047cab45fcfa1fafc2ebbcc597427400c92905ef92d",
+  "all_heldout_windows_checked": true,
+  "threshold_transfer_checked": true,
+  "split_isolation_checked": true,
+  "errors_and_alarm_rules_recomputed": true,
+  "calibration_choice_checked": true,
+  "source_fold_hashes": {
+    "7:0001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0001",
+      "sha256": {
+        ".split.json": "26841d86f449b48e111202ea9b89b20c61b935a6712eefffebf1c3dfdbaf16fa",
+        ".metrics.csv": "6524ae84a5d266f30d6b17845e3cc5138592889c44f9fd27c24d1644992edad4",
+        ".predictions.csv": "454f77d9f3781651609e010acdcd0bd5b0734ed50e82dd75b43b7ff250279518"
+      }
+    },
+    "7:0002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0002",
+      "sha256": {
+        ".split.json": "3a2e64288c860dfd461d2c840f3b5634ff7c03e85fb548cd924bc7a53897774a",
+        ".metrics.csv": "43cd4ddecf3386dbe323dd03ee91ec52eca0c4256c98e85e1b7d2c9d5836316f",
+        ".predictions.csv": "e11b4a150724e252a2e8bd0d827344ce28aee85cdcfae3de0c79263cf82c1f31"
+      }
+    },
+    "7:0003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0003",
+      "sha256": {
+        ".split.json": "0d2f08189e66449fdda4276f48163879e97f5c8e1d3d467be81614643debd2e5",
+        ".metrics.csv": "1eb5e8cbd9d2b2534dba5d96368bf687cc9af030440cb45f92e2d5d85717cb86",
+        ".predictions.csv": "1aac376650e8601e9fae5b61858f60d9cfe4c64adb70d0bd14a098eebf3ba5e3"
+      }
+    },
+    "7:0005": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0005",
+      "sha256": {
+        ".split.json": "46c435d0ecd0a4a124e1aedc46caa3921276497943439e1ca55cc9bb200562f9",
+        ".metrics.csv": "00a8cdff7f85187af3285e85e59e4dd7ba6ee052f94225a4985bba9a99dda7f0",
+        ".predictions.csv": "1d0e80c83534eade7481d09d5451874dc8481876ebe83279b7702a5f3b076bd3"
+      }
+    },
+    "7:0006": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0006",
+      "sha256": {
+        ".split.json": "57a141d8cf1dc7e93f2e3ee772ad27d5f0b7e1e87c24596a0a2857a80ac3ac28",
+        ".metrics.csv": "faadb817e368dbcb524370b0693a2132c0bd40e30bd14dc54fb24b7fa41af472",
+        ".predictions.csv": "02d67ea3e981e12a6b5649b2b0890d904660e720c4347512eadff2d281338121"
+      }
+    },
+    "7:0007": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_0007",
+      "sha256": {
+        ".split.json": "8f6c7363b2cc63f2ecb627a59fd5fa551d935771723d43c0d0a797f4b790c8fe",
+        ".metrics.csv": "107825bffd1ce9b651726e4bc025a95b8bfbdfe19d994c23af2367b2ceba38d1",
+        ".predictions.csv": "d1cb822b132b5195fcc2a67479ccb16afc862522b806f59ebc49314ed02d0761"
+      }
+    },
+    "7:1000": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1000",
+      "sha256": {
+        ".split.json": "bacf3c4b48ea04b279dce5c6b5c7ec8c44bcd177547a922c06ecdc645482294e",
+        ".metrics.csv": "d2c937c3a21dabe744aed105faeb7ef830d69f91fc059ec7d54bc8991550e785",
+        ".predictions.csv": "a8b54bbc1a923bc5a78aa75e396d9caaef30ff704111120c7fbadbe80f7eaecd"
+      }
+    },
+    "7:1001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1001",
+      "sha256": {
+        ".split.json": "378379d27a1c88da2f9447dcef95e3d4c76661709ed56a4cc5c81a82a3ce9c11",
+        ".metrics.csv": "ba3d150b0924e80d19d0b8c7fbc47119176fb2b2f971e5897a0ef0351ea98faa",
+        ".predictions.csv": "149248d6a27a76bd5a8fd3e28ada07d049260190e8b79964e32181554b3c6ff9"
+      }
+    },
+    "7:1002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1002",
+      "sha256": {
+        ".split.json": "7c8d8e943598413c52aeb0bbde98c9f5652776c39e98f5d295ae6fb97814f9f7",
+        ".metrics.csv": "26a5bb8803257880b351ecd4c89eb4e6c6efc9f29839bd142856d22abc67ccab",
+        ".predictions.csv": "7be1d9d70b629a1952ae14c2bccadcadfa1efac6e23d5f3732a8e600022bd071"
+      }
+    },
+    "7:1003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1003",
+      "sha256": {
+        ".split.json": "41fb92f3da392f6c531e4abf7faabbd45467e42f3ab4ed42f3005420e44190c2",
+        ".metrics.csv": "3df2fc0cae9104191eaf0b554baf90af3a3f1bea2af4cce19f534d30d5c9c2f3",
+        ".predictions.csv": "3cfb6c893b96e685d7002cbc60b2288750e88aa372541dfb47eaade948ab391e"
+      }
+    },
+    "7:1004": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1004",
+      "sha256": {
+        ".split.json": "74df900a9b158d7a8814cb3092e2c26bd686d39e69b5be694b0aa2decd45cf8a",
+        ".metrics.csv": "3b9a65d5b418315dc210cf3f67fc7a983626242896fc9cfb5bb7045f96c2258e",
+        ".predictions.csv": "5fdf8e377e7fb4a064bd16d53d5acf25c9daee1ed4536ab723ad127f87753b14"
+      }
+    },
+    "7:1101": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1101",
+      "sha256": {
+        ".split.json": "76f3f42eccc18c60c019ec8651a7d686b92be6ba6a6a0a238425370f42471407",
+        ".metrics.csv": "9111fad459114d32d6e034556bd350e9c0e9cc7141fc6e5851ca8b62ecc76557",
+        ".predictions.csv": "0b1e23a58414f38fde8b39a3fa77bf04c34ca9581264920b7bd6d81da3e91659"
+      }
+    },
+    "7:1102": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_7_1102",
+      "sha256": {
+        ".split.json": "4b82284cfcf64f17ae41afaae6e45202a5f1c5b52eef9221d12b4ff6c4368a86",
+        ".metrics.csv": "6f0fe485ceba29ce4ee42ce98eca2e97ac55eb0c1bf4ba373f295e4a05cdf40f",
+        ".predictions.csv": "0211f0730d655f1d447cb796ac7709fb11573ff61a678f9dce2a2e9924e5a57c"
+      }
+    },
+    "19:0001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0001",
+      "sha256": {
+        ".split.json": "03064252ac52f14d825f413c281071c434c495545e6a1c0382691aeaae940a5c",
+        ".metrics.csv": "a7603671ff4070bde92167a274dbec16b0c25843cb354e955f78266995707098",
+        ".predictions.csv": "4c0dfc783b157ed66071f839db40a4af7bc0df1a35637d8c20286298be0aea15"
+      }
+    },
+    "19:0002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0002",
+      "sha256": {
+        ".split.json": "c0c11a6f3588e415743dbbe04b933a02e0858c608cc1310537185560822c3cd0",
+        ".metrics.csv": "2d0cc7b00bd8f3baf6aa34eac184fdd3fd56a583f4859063fdafb82f9cd01b0e",
+        ".predictions.csv": "f5d134cad8fb78c16cafac8079f3d66f4169a445efba24c38190d10ffea35244"
+      }
+    },
+    "19:0003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0003",
+      "sha256": {
+        ".split.json": "20d713c0d694e37a6cdc2fe9a7b3916b62680e23c355945c9731a7184bd48972",
+        ".metrics.csv": "a853c8fbbe77523d0cdddb9ad614b4840d06c526f7da52f5c178419728ad98c4",
+        ".predictions.csv": "8735cd402f493bf0f50fdb85d1787be1ac2728a6841078be4d6c89b9dc9061d2"
+      }
+    },
+    "19:0005": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0005",
+      "sha256": {
+        ".split.json": "b49e2310295ce26fa7af6bf6448428a83f822fb2634760c4f1d33b2a269046f1",
+        ".metrics.csv": "257f29471150758d661a9ae42fac9fbc9324c44351c3be5eb5274ea09964fdf0",
+        ".predictions.csv": "dd0731bc95d1c993f33f9923eca9931166e306ef04c37d82acf57b76043a19b6"
+      }
+    },
+    "19:0006": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0006",
+      "sha256": {
+        ".split.json": "0fe187f3e1606f7ee4e9d9be802b1006d93efb8931e13931d0e995f69ce20a01",
+        ".metrics.csv": "adcb3bf6e4172d8ac33bbeb1932e0ae24baab8b80e2aea8c885d71df2ad4ff75",
+        ".predictions.csv": "8a74e5b292b0560abc8c320030302bc62b4da03eafa00ca8068b6e36e32744ae"
+      }
+    },
+    "19:0007": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_0007",
+      "sha256": {
+        ".split.json": "5b0060ac716eeac892c4c073ffd298e426495a7e3c09f17f009a5b24222c153f",
+        ".metrics.csv": "32a07970c3357f1d215f98a5c91e054b3933ff10453b05156380b35d12d18ea1",
+        ".predictions.csv": "328fd4de3c4fedbf70ea17c140ef8b79282553b50789671bf8f2a42a93251aaf"
+      }
+    },
+    "19:1000": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1000",
+      "sha256": {
+        ".split.json": "698c8c2f0f15c9ea91c2878291d1ff19e6810522c2eba1b01f6bb48e8941e11d",
+        ".metrics.csv": "ea89ba024709e24ace02f0c1239944668e3380d25d1979048fe6dbc148754f51",
+        ".predictions.csv": "62776e169ef38e95caabcc1cf36b59468a14584a13a92aa9c7f25f7ac94bd870"
+      }
+    },
+    "19:1001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1001",
+      "sha256": {
+        ".split.json": "a2033aa990367b727ea577924b6eb286f0603aa954d6182afd09c67016f3c9fc",
+        ".metrics.csv": "8a019ad5e0285b28a7fb55a487a5653821f6e2e63cd7ad50e3f7d37e31aa4eba",
+        ".predictions.csv": "86a7f0ceeb3e994bfe44baa087f1147d72eee20044a45baa56a09abee0f916fe"
+      }
+    },
+    "19:1002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1002",
+      "sha256": {
+        ".split.json": "1221aa23b75dd642616e90df8165905b463b451ef01c75b1a21d728fec2373a0",
+        ".metrics.csv": "52603193059696754ddfb2e79905d1c2a16ff280b73cb5829aedd55e47fba331",
+        ".predictions.csv": "b4ea2b908e144a07d9cbca74f35472598f40eb8ad5d4708071d0f293c96eff88"
+      }
+    },
+    "19:1003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1003",
+      "sha256": {
+        ".split.json": "1ebff5576d46ec99f3f4c43ff92af02885f1ab984f11b52b993aeaac89dfc5de",
+        ".metrics.csv": "6a2d79c045c94ec88ef6a2660202e3c65d10ac39a43ce7a69a037ea3983788ac",
+        ".predictions.csv": "395ab05d3d75848b9a6d5e8f82d5d7ce6531fdd94489d6b51b13c4de6fe75ebd"
+      }
+    },
+    "19:1004": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1004",
+      "sha256": {
+        ".split.json": "10dcc30e9360b53096114995ef5e10ef1708ea71625c3bcb08a4bb94d4bb15f5",
+        ".metrics.csv": "33d6f45a66fa2c3b65ff519c503b1f7cf25dd575bd91b3f3c6d1c589edf731a8",
+        ".predictions.csv": "3cb504fe103f7fe9a9adfb62e987239a3d9a0b19c67310e49bbce346de30f938"
+      }
+    },
+    "19:1101": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1101",
+      "sha256": {
+        ".split.json": "8f80e47cf3d27a5589dccaef3ceb86deb7d25a5fe3d631d777402134f3aa1f48",
+        ".metrics.csv": "325f2e1eb94ffb0eedd33d577eb70cd631c5d8b31a456ed9f82eb4bbe8aa8d62",
+        ".predictions.csv": "6f45c2d574df3c2ee74dc52789862bea1ac67ae56fff76af0c7ed6de55f2f798"
+      }
+    },
+    "19:1102": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_19_1102",
+      "sha256": {
+        ".split.json": "ce674673f55880c81d867776640fb373fdee45280421f906ffef162391420fbe",
+        ".metrics.csv": "1d5e739af80b29360f4ccfc387199212582abcff2527dbb121ac467b979c20c1",
+        ".predictions.csv": "0c900109c65de89e3270ac1d70cf5e5e34849c14a927e4f56ffb1e8023199054"
+      }
+    },
+    "42:0001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0001",
+      "sha256": {
+        ".split.json": "8c072d661fe9ef286de7bf0db773493ab3a543e75fba5abff875f833825ff253",
+        ".metrics.csv": "43db9187b10c83f8abdef4dd40b752ca27c219926ab283741040e15926cee176",
+        ".predictions.csv": "50632b2986d6d422ac604cc6cfe29a648df29ee3446fab9a93fc24fd190b1b49"
+      }
+    },
+    "42:0002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0002",
+      "sha256": {
+        ".split.json": "bb89a7fa48d4fc86bf8667383fcd4af62574723f51bc33ac80eea019cab8a2b0",
+        ".metrics.csv": "8dbd037f317172da500b685d52b190e24cea2ddbd8279acac5e699fa9684f6d4",
+        ".predictions.csv": "aa45ed931ff5c0738117f25e3b05a9fe816964b863ad5e970016f01be6bb8086"
+      }
+    },
+    "42:0003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0003",
+      "sha256": {
+        ".split.json": "f40ee99a12a0efc9992ebe6c66b903cb7305b6f0b1c1b28c862f51d13f8e8b95",
+        ".metrics.csv": "7749f09a83b32d0c2c3f115d10e69532d54a2968ca04dfcaa00cc00c6a2a255f",
+        ".predictions.csv": "f4fbf01ca9a9fdbdabfebc30c428027b6b32dc3b0c2b82dcc98c4ade3d9d97af"
+      }
+    },
+    "42:0005": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0005",
+      "sha256": {
+        ".split.json": "889c187e8fc87909d281807beaafca4b0cd7e6b0e7f05425470ef936c6e58c4a",
+        ".metrics.csv": "22daf700cc97632a30eb1502a2ead9742004906b408dbfd2d14a24dbc520fb71",
+        ".predictions.csv": "3b435bad862ef82b62cbbf2f2deffcd9b04134aaa0fff87edb12dfa9e39b33ad"
+      }
+    },
+    "42:0006": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0006",
+      "sha256": {
+        ".split.json": "181945c242860b6570b4dd6f7251c8909eae3b209fe46e4ab266cdc27885f85a",
+        ".metrics.csv": "26184b29536a7679502e8a9e995c520bc9b860e631920f876ca0669e33878195",
+        ".predictions.csv": "5e0da2e70c07f5731ae6ecee8139ae0124c5953b25cf2b6273e8cc6f6f587dc3"
+      }
+    },
+    "42:0007": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_0007",
+      "sha256": {
+        ".split.json": "8efb24e238e6e11584c2b530f4fc284a8505e6e64db0f8cb42583d662c6c3128",
+        ".metrics.csv": "f6729520dd0918f86753f47b8307b2df208247240a2be723ce396913a05ca9af",
+        ".predictions.csv": "c9f4852f2fecf13cfcf199ec6bbd40d69812e4f7463c18300e6083c183d7472b"
+      }
+    },
+    "42:1000": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1000",
+      "sha256": {
+        ".split.json": "5a4edf6dffc688687422ec75604b5bcb9ed4d11bcd8bf07a90e7e7656e9d12dd",
+        ".metrics.csv": "518e6c9d3e458ab3cd7c1647537c34fc6eba906547a2263dbc5a4eb9ef75d001",
+        ".predictions.csv": "2548a9f1820bdbcc5f63ce400f6bd5aa02c0f670a93a04efec40f112454b61e7"
+      }
+    },
+    "42:1001": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1001",
+      "sha256": {
+        ".split.json": "9d9f6c58b47b8234d9669912ccc39462f013d2a2b572defb7727af329ddb8135",
+        ".metrics.csv": "d4dbc8f39e5bbfda593c1cb55ffed0d8ad9313ddb50a9e8ba9732534e31b0d0d",
+        ".predictions.csv": "1d05ce5252853e693602f8bef88dd0c2d3ab8ed80ce60acfbd5a62c346892044"
+      }
+    },
+    "42:1002": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1002",
+      "sha256": {
+        ".split.json": "98f96643a03e1913266d5d7b81659224982cef6dc9c555d32b696c4adba7b05f",
+        ".metrics.csv": "865be278bb991578766275e5ee256fb0136754b534cb7b16eaf5906dba4f7fd2",
+        ".predictions.csv": "5aaf27e0198688afb90fd92425762c90fc29507a661525928ce73ed4418fb483"
+      }
+    },
+    "42:1003": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1003",
+      "sha256": {
+        ".split.json": "d991d39b57b3b0658d5f832e430b1f9d3911bd2f7f7a94f693aa745eaf0f842c",
+        ".metrics.csv": "e9f73f9696146f70793a7ae967814bda44fb48bb573415fbcd5d9a2d5554b72b",
+        ".predictions.csv": "153bf31df3d1155dd8945a7aa4e99f65d386e08785ea197ad524be510b08d84e"
+      }
+    },
+    "42:1004": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1004",
+      "sha256": {
+        ".split.json": "06ef5c9f0d3691b73896cbac4ad739b22159289a050d8af498586b37fac78f7c",
+        ".metrics.csv": "bd2f9dadf2ff762c3f6e16769115a39e161eb15bd283e317399cfd0ee162cdb0",
+        ".predictions.csv": "b5d72bf7c46c8a27919263847b56f3585ea0ce5049cda3b574d7b93e511dbe6e"
+      }
+    },
+    "42:1101": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1101",
+      "sha256": {
+        ".split.json": "d0505b5eb18835e58c5adb5b83cddb46dabaeb544028e3286601f49f83d14ec1",
+        ".metrics.csv": "c74279f77bf16bf2127292895467da12e32dc4a99a18c894e3319ed8d05faea2",
+        ".predictions.csv": "8cbeec4b494e4fcf669d2f862815f1446130f94765aff78f6241da4b3ed6bc15"
+      }
+    },
+    "42:1102": {
+      "path": "analysis\\runs\\feedback_v4_original_complete\\fold_42_1102",
+      "sha256": {
+        ".split.json": "f26aa2fb19bcb258366b96df10980033f00cf378636b5a66ceeff0b8b576df4d",
+        ".metrics.csv": "c455c0d637238e4d6004a4b77092b7a63a448cf17cc6a8132933d455af0c1f43",
+        ".predictions.csv": "7c8560d914903f74e67728a8ef6300e41d1c40981a3fae58b36280eb769bfe2a"
+      }
+    }
+  }
+}

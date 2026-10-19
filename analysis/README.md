@@ -1,5 +1,23 @@
 # Offline EEG and risk replay
 
+## Simulated sparse symptom feedback (30-34)
+
+`30_prepare_feedback_v4.py` audits author IDs, raw rating clocks, missingness,
+exact duplicates and recomputed historical motion/targets. It simulates report
+requests at 15/30/60 s and arrivals after 0/3/6 s. Only already-arrived reports
+are model inputs. The three methods share all eligible windows.
+
+`31_freeze_feedback_v4.py` records the local protocol/source/input lock before
+fitting. `32_run_feedback_v4.py` runs the fixed grouped comparison; `33` requires
+the complete seed/ID/condition grid and saves paired ID bootstrap intervals;
+`34` writes Chinese reports and a paper addendum. See the root-relative commands
+in `../research/README.md` and `../research/feedback_v4_protocol.md`.
+
+The action threshold is calibrated only at 30 s interval / 3 s delay and is
+transferred unchanged to the other conditions. These are simulated data
+availability conditions, not measured user response latency or burden, and
+source symptoms never change under simulated actions.
+
 ## Independent dataset and execution-aware evaluation (21-27)
 
 Scripts `21` and `22` acquire the pinned Ryu/Kim author snapshot and audit

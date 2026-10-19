@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\university\course5\VR�������ʽ�Ի��ӿڣ�BCI������㷨������\VR-Cybersickness-BCI\analysis\32_run_feedback_v4.py", line 199, in <module>
+    run(root, args.dataset, output, args.seeds)
+  File "D:\university\course5\VR�������ʽ�Ի��ӿڣ�BCI������㷨������\VR-Cybersickness-BCI\analysis\32_run_feedback_v4.py", line 127, in run
+    weights *= len(fit) / weights.sum()
+ValueError: output array is read-only

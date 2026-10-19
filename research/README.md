@@ -1,5 +1,38 @@
 # 晕动症提前预警论文工作区
 
+## 低频、延迟症状反馈 v4（2026-10-19）
+
+方案：[feedback_v4_protocol.md](feedback_v4_protocol.md)；文献与证据分层：
+[feedback_v4_literature_zh.md](feedback_v4_literature_zh.md)。完整评估已完成，共 183 折、
+4,941 个模型/条件/编号/种子组合。见 [v4 总报告](progress_feedback_v4_zh.md) 和
+[论文补充稿](feedback_v4_paper_addendum_zh.md)。审计输出位于 `results/feedback_v4_audit/`。
+
+主条件下未支持当前运动增强方案：第二源 MAE 从评分历史的 2.5062 升至 2.5610，
+可用动作召回从 6.66% 降至 2.66%。两种 HGB 相对最近报告保持的 MAE 差值区间均跨零。
+完整性入口为 `results/feedback_v4_completion.json` 和 `results/feedback_v4_integrity.json`。
+
+从项目根目录执行，保留原始数据和既有特征准备流程；新输出不覆盖 v1–v3：
+
+```powershell
+analysis/.venv/Scripts/python.exe analysis/30_prepare_feedback_v4.py
+analysis/.venv/Scripts/python.exe analysis/31_freeze_feedback_v4.py
+analysis/.venv/Scripts/python.exe analysis/32_run_feedback_v4.py --dataset original --output analysis/runs/feedback_v4_original_complete
+analysis/.venv/Scripts/python.exe analysis/32_run_feedback_v4.py --dataset secondary --seeds 7 --output analysis/runs/feedback_v4_secondary_complete
+analysis/.venv/Scripts/python.exe analysis/32_run_feedback_v4.py --dataset secondary --seeds 19 --output analysis/runs/feedback_v4_secondary_s19
+analysis/.venv/Scripts/python.exe analysis/32_run_feedback_v4.py --dataset secondary --seeds 42 --output analysis/runs/feedback_v4_secondary_s42
+analysis/.venv/Scripts/python.exe analysis/33_report_feedback_v4.py
+analysis/.venv/Scripts/python.exe analysis/34_write_feedback_documents.py
+```
+
+以上计算命令针对新目录。已存在的运行只接受相同冻结身份继续；首次失败和修复记录见
+`results/feedback_v4_execution_notes.md`。本次第二源种子 7 由初始三种子运行目录取出，
+另两个种子从明确指定目录归档，不依结果选择重复计算。
+
+先完成数据准备再冻结，首次模型拟合前保存协议、代码和准备表 SHA256。旧锁存在但
+来源变化时脚本拒绝覆盖，应保留旧锁与运行并显式建立新版本。当前和未来真实评分
+只用于标签、训练响应与评价，主模型特征仅包含已到达反馈和过去运动；模拟抽稀不
+能证明真实自报负担或症状减轻。`33` 严格要求完整编号/种子/条件网格后才标为完成。
+
 ## 周报与研究交付包
 
 - [2026-10-12 至 2026-10-18 周报](weekly_report_2026-10-18_zh.md)

@@ -1,0 +1,27 @@
+{
+  "status": "exploratory_after_v1_v2_v3; freeze_before_feedback_model_results",
+  "date": "2026-10-19",
+  "intervals_s": [15.0, 30.0, 60.0],
+  "delays_s": [0.0, 3.0, 6.0],
+  "primary_interval_s": 30.0,
+  "primary_delay_s": 3.0,
+  "window_s": 3.0,
+  "horizon_s": 6.0,
+  "history_s": 9.0,
+  "seeds": [7, 19, 42],
+  "calibration_fraction": 0.25,
+  "hgb": {"max_iter": 100, "max_leaf_nodes": 7, "learning_rate": 0.05, "l2_regularization": 10.0},
+  "threshold_quantiles": 41,
+  "false_alarm_budget_per_min": 0.5,
+  "occupancy_budget": 0.2,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20261019,
+  "primary_dataset": "secondary",
+  "primary_metric": "native_future_peak_mae: feedback_motion_hgb minus feedback_history_hgb",
+  "model_training": "pool all nine feedback conditions within fitting IDs only, with inverse ID window-count weights",
+  "action_calibration": "primary 30-second interval / 3-second delay only; transfer the selected threshold unchanged to other conditions",
+  "datasets": {
+    "original": {"scale_max": 1.0, "event_delta": 0.1, "rating_max_gap_s": 1.0, "features": "hmd_ only; previously retained EEG-valid cohort"},
+    "secondary": {"scale_max": 20.0, "event_delta": 1.0, "rating_max_gap_s": 1.5, "max_rows": 420, "features": "motion_ only"}
+  }
+}
